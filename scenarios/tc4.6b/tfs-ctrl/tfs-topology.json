@@ -1,0 +1,103 @@
+{
+    "contexts": [
+        {"context_id": {"context_uuid": {"uuid": "admin"}}}
+    ],
+    "topologies": [
+        {"topology_id": {"context_id": {"context_uuid": {"uuid": "admin"}}, "topology_uuid": {"uuid": "admin"}}}
+    ],
+    "devices": [
+        {
+            "device_id": {"device_uuid": {"uuid": "internet"}}, "device_type": "network",
+            "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_config": {"config_rules": [
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
+                    {"uuid": "int", "type": "copper"},
+                    {"uuid": "eth1", "type": "copper"}
+                ]}}}
+            ]}
+        },
+        {
+            "device_id": {"device_uuid": {"uuid": "corporate"}}, "device_type": "network",
+            "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_config": {"config_rules": [
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
+                    {"uuid": "int", "type": "copper"},
+                    {"uuid": "eth1", "type": "copper"}
+                ]}}}
+            ]}
+        },
+        {
+            "device_id": {"device_uuid": {"uuid": "server"}}, "device_type": "emu-datacenter",
+            "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_config": {"config_rules": [
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
+                    {"uuid": "int", "type": "copper"},
+                    {"uuid": "eth1", "type": "copper"}
+                ]}}}
+            ]}
+        },
+        {
+            "device_id": {"device_uuid": {"uuid": "firewall"}}, "device_type": "packet-router",
+            "device_drivers": ["DEVICEDRIVER_GNMI_OPENCONFIG"],
+            "device_config": {"config_rules": [
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "172.20.20.101"}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "6030"}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {
+                    "username": "admin", "password": "admin", "use_tls": false
+                }}}
+            ]}
+        }
+    ],
+    "links": [
+        {
+            "link_id": {"link_uuid": {"uuid": "firewall/Ethernet1==internet/eth1"}},
+            "link_endpoint_ids": [
+                {"device_id": {"device_uuid": {"uuid": "firewall"}}, "endpoint_uuid": {"uuid": "Ethernet1"}},
+                {"device_id": {"device_uuid": {"uuid": "internet"}}, "endpoint_uuid": {"uuid": "eth1"}}
+            ]
+        },
+        {
+            "link_id": {"link_uuid": {"uuid": "internet/eth1==firewall/Ethernet1"}},
+            "link_endpoint_ids": [
+                {"device_id": {"device_uuid": {"uuid": "internet"}}, "endpoint_uuid": {"uuid": "eth1"}},
+                {"device_id": {"device_uuid": {"uuid": "firewall"}}, "endpoint_uuid": {"uuid": "Ethernet1"}}
+            ]
+        },
+
+        {
+            "link_id": {"link_uuid": {"uuid": "firewall/Ethernet2==server/eth1"}},
+            "link_endpoint_ids": [
+                {"device_id": {"device_uuid": {"uuid": "firewall"}}, "endpoint_uuid": {"uuid": "Ethernet2"}},
+                {"device_id": {"device_uuid": {"uuid": "server"}}, "endpoint_uuid": {"uuid": "eth1"}}
+            ]
+        },
+        {
+            "link_id": {"link_uuid": {"uuid": "server/eth1==firewall/Ethernet2"}},
+            "link_endpoint_ids": [
+                {"device_id": {"device_uuid": {"uuid": "server"}}, "endpoint_uuid": {"uuid": "eth1"}},
+                {"device_id": {"device_uuid": {"uuid": "firewall"}}, "endpoint_uuid": {"uuid": "Ethernet2"}}
+            ]
+        },
+
+        {
+            "link_id": {"link_uuid": {"uuid": "firewall/Ethernet3==corporate/eth1"}},
+            "link_endpoint_ids": [
+                {"device_id": {"device_uuid": {"uuid": "firewall"}}, "endpoint_uuid": {"uuid": "Ethernet3"}},
+                {"device_id": {"device_uuid": {"uuid": "corporate"}}, "endpoint_uuid": {"uuid": "eth1"}}
+            ]
+        },
+        {
+            "link_id": {"link_uuid": {"uuid": "corporate/eth1==firewall/Ethernet3"}},
+            "link_endpoint_ids": [
+                {"device_id": {"device_uuid": {"uuid": "corporate"}}, "endpoint_uuid": {"uuid": "eth1"}},
+                {"device_id": {"device_uuid": {"uuid": "firewall"}}, "endpoint_uuid": {"uuid": "Ethernet3"}}
+            ]
+        }
+    ]
+}

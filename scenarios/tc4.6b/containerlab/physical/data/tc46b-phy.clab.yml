@@ -1,0 +1,26 @@
+# Ref: https://containerlab.dev/manual/network/#macvlan-links
+# Ref: https://containerlab.dev/manual/network/#host-links
+
+name: tc46b-phy
+
+mgmt:
+  network: mgmt-net
+  ipv4-subnet: 172.20.20.0/24
+  mtu: 1400
+
+topology:
+  kinds:
+    arista_ceos:
+      kind: arista_ceos
+      image: ceos:4.33.5M
+
+  nodes:
+    firewall:
+      kind: arista_ceos
+      mgmt-ipv4: 172.20.20.101
+      startup-config: firewall-static.cfg
+
+  links:
+    - endpoints: ["firewall:eth1", "macvlan:enp0s"] # connect to Public WAN virtual network
+    - endpoints: ["firewall:eth2", "macvlan:enp0s"] # connect to Private DMZ virtual network
+    - endpoints: ["firewall:eth3", "macvlan:enp0s"] # connect to Corporate LAN virtual network

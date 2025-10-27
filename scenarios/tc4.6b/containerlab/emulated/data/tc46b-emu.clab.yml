@@ -1,0 +1,60 @@
+name: tc46b-emu
+
+mgmt:
+  network: mgmt-net
+  ipv4-subnet: 172.20.20.0/24
+  mtu: 1400
+
+topology:
+  kinds:
+    arista_ceos:
+      kind: arista_ceos
+      image: ceos:4.33.5M
+    linux:
+      kind: linux
+      #image: ghcr.io/hellt/network-multitool:latest    # features HTTP/HTTPS
+      image: ghcr.io/srl-labs/network-multitool:latest  # features HTTP/HTTPS and SSH
+
+  nodes:
+    firewall:
+      kind: arista_ceos
+      mgmt-ipv4: 172.20.20.101
+      startup-config: firewall-static.cfg
+
+    internet:
+      kind: linux
+      mgmt-ipv4: 172.20.20.201
+      exec:
+        - ip link set address 00:c1:ab:00:02:01 dev eth1
+        - ip address add 10.0.0.1/16 dev eth1
+        - ip route add 192.168.0.0/24 via 10.0.0.81
+        - ip route add 192.168.1.0/24 via 10.0.0.81
+        #- /bin/sh /docker-entrypoint.sh nginx "-g daemon off;" # for hellt
+        #- /bin/sh /docker/entrypoint.sh "/usr/sbin/nginx -g daemon off;" # for srl-labs
+
+    corporate:
+      kind: linux
+      mgmt-ipv4: 172.20.20.203
+      exec:
+        - ip link set address 00:c1:ab:00:02:02 dev eth1
+        - ip address add 192.168.1.200/24 dev eth1
+        - ip route add 10.0.0.0/16 via 192.168.1.1
+        - ip route add 192.168.0.0/24 via 192.168.1.1
+        #- /bin/sh /docker-entrypoint.sh nginx "-g daemon off;" # for hellt
+        #- /bin/sh /docker/entrypoint.sh "/usr/sbin/nginx -g daemon off;" # for srl-labs
+
+    server:
+      kind: linux
+      mgmt-ipv4: 172.20.20.202
+      exec:
+        - ip link set address 00:c1:ab:00:02:03 dev eth1
+        - ip address add 192.168.0.10/24 dev eth1
+        - ip route add 10.0.0.0/16 via 192.168.0.1
+        - ip route add 192.168.1.0/24 via 192.168.0.1
+        #- /bin/sh /docker-entrypoint.sh nginx "-g daemon off;" # for hellt
+        #- /bin/sh /docker/entrypoint.sh "/usr/sbin/nginx -g daemon off;" # for srl-labs
+
+  links:
+    - endpoints: ["firewall:eth1", "internet:eth1"]
+    - endpoints: ["firewall:eth2", "server:eth1"]
+    - endpoints: ["firewall:eth3", "corporate:eth1"]

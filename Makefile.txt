@@ -1,0 +1,6 @@
+POETRY := $(shell command -v poetry 2> /dev/null)
+DOCKER := $(shell command -v docker 2> /dev/null)
+
+.PHONY: ci
+ci:
+	pre-commit run --all-files

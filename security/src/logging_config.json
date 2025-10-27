@@ -1,0 +1,37 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "filters": {},
+    "formatters": {
+        "simple": {
+            "format": "%(levelname)s: %(message)s"
+        },
+        "detailed": {
+            "format": "[%(levelname)s|%(module)s] %(asctime)s: %(message)s",
+            "datefmt": "%Y-%m-%dT%H:%M:%S%z"
+        }
+    },
+    "handlers": {
+        "stderr": {
+            "class": "logging.StreamHandler",
+            "level": "WARNING",
+            "formatter": "detailed",
+            "stream": "ext://sys.stderr"
+        },
+        "stdout": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "detailed",
+            "stream": "ext://sys.stdout"
+        }
+    },
+    "loggers": {
+        "root": {
+            "level": "DEBUG",
+            "handlers": [
+                "stderr",
+                "stdout"
+            ]
+        }
+    }
+}

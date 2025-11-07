@@ -45,7 +45,43 @@ It automates the **collect → analyze → decide → enforce** cycle to operati
 
 ## Architecture (at a Glance)
 
-**Conceptual Overview:**
+```mermaid
+flowchart LR
+  subgraph Telemetry[Telemetry & Inputs]
+    T1[Net/Host Sensors]
+    T2[Logs/Events]
+    T3[Inventory/CMDB]
+  end
+
+  subgraph OpenSTO
+    C[Collector]
+    A[Analytics & Trust Scoring]
+    P[Policy Engine]
+    D[Decision/Orchestration]
+    E[Enforcement Adapter(s)]
+    DB[(State/DB)]
+  end
+
+  subgraph Targets[Targets]
+    X1[Network Controllers]
+    X2[Security Controls]
+    X3[Cloud/K8s]
+  end
+
+  T1 --> C
+  T2 --> C
+  T3 --> C
+  C --> A --> P --> D --> E
+  E --> X1
+  E --> X2
+  E --> X3
+  C -- state --> DB
+  A -- state --> DB
+  P -- policies --> DB
+  D -- plans --> DB
+'''
+
+This diagram is conceptual; specific components and adapters are wired per scenario.
 
 OpenSTO follows a modular architecture for closed-loop automation:
 

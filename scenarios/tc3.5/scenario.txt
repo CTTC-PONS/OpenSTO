@@ -1,0 +1,28 @@
+                      172.20.20.0/24
+   ---+---------------[ MGMT ]----------------+-------------------------------------+---+---
+      |                                       | .101                                |   | .202 (eth0)
+      |                                 +-----+-----+       192.168.0.0/24      +-------+---+
+      | .201                            |           |----------[ DMZ ]----------+ Server    |
++-----+-----+        10.0.0.0/16        | Firewall  | .1 (eth2)      (eth1) .10 +-----------+
+| Internet  +----------[ WAN ]----------|           |                               | .203 (eth0)
++-----------+ .1 (eth1)     (eth1) .81  |  Arista   |       192.168.1.0/24      +---+-------+
+                                        |   cEOS    |----------[ LAN ]----------+ Corporate |
+                                        +-----------+ .1 (eth3)     (eth1) .200 +-----------+
+
+Target security rules:
+1) HTTP and ICMP denied from Internet to Server in DMZ.
+2) HTTP and ICMP permitted from Corporate to Server in DMZ.
+
+ACLs:
++-----+-----------------+-----------------+-------+-----------+-----------+--------+---------------------------------------+
+| Seq | Src IP          | Dst IP          | Proto | Src Port  | Dst Port  | Action | Description                           |
++-----+-----------------+-----------------+-------+-----------+-----------+--------+---------------------------------------+
+| 1   | 10.0.0.0/0      | 192.168.0.10/32 | TCP   | ANY       | HTTP (80) | DENY   | Deny Internet->Server HTTP requests   |
+| 2   | 192.168.0.10/32 | 10.0.0.0/0      | TCP   | HTTP (80) | ANY       | DENY   | Deny Server->Internet HTTP replies    |
+| 3   | 10.0.0.0/0      | 192.168.0.10/32 | ICMP  | ---       | ---       | DENY   | Deny Internet->Server ICMP            |
+| 4   | 192.168.0.10/32 | 10.0.0.0/0      | ICMP  | ---       | ---       | DENY   | Deny Server->Internet ICMP            |
+| 5   | 192.168.1.0/0   | 192.168.0.10/32 | TCP   | ANY       | HTTP (80) | ALLOW  | Allow Corporate->Server HTTP requests |
+| 6   | 192.168.0.10/32 | 192.168.1.0/0   | TCP   | HTTP (80) | ANY       | ALLOW  | Allow Server->Corporate HTTP replies  |
+| 7   | 192.168.1.0/0   | 192.168.0.10/32 | ICMP  | ---       | ---       | ALLOW  | Allow Corporate->Server ICMP          |
+| 8   | 192.168.0.10/32 | 192.168.1.0/0   | ICMP  | ---       | ---       | ALLOW  | Allow Server->Corporate ICMP          |
++-----+-----------------+-----------------+-------+-----------+-----------+--------+---------------------------------------+

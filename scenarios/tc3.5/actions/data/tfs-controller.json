@@ -1,0 +1,7 @@
+{
+  "controller_type": "tfs",
+  "ip": "10.0.2.10",
+  "port": 80,
+  "username": "admin",
+  "password": "admin"
+}

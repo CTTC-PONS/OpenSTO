@@ -79,7 +79,7 @@ flowchart LR
   A -- state --> DB
   P -- policies --> DB
   D -- plans --> DB
-'''
+```
 
 This diagram is conceptual; specific components and adapters are wired per scenario.
 

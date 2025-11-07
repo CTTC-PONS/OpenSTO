@@ -8,6 +8,8 @@ from src.control.controller import MirroringRequest
 class SSLAType(str, Enum):
     DOS_PREVENTION = 'ddos_protection'
     ACL = 'ssh-block-service'
+    HTTP_DEFAULT = 'http-default'
+    HTTP_ALLOW_CLIENT = 'http-allow-client'
 
 
 class SLS_UUIDS(str, Enum):

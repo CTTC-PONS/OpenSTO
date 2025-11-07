@@ -343,8 +343,8 @@ class TFS:
         request_url = settings.TFS_NBI_BASE_URL(
             request.wim_ip, request.wim_port
         ) + ACL_POST_URL.format(request.acl_create.device_id)
-        ietf_acl_data = get_ietf_acl(request.acl_create)
         logger.info('[add_acl] request_url={:s}'.format(str(request_url)))
+        ietf_acl_data = get_ietf_acl(request.acl_create)
         logger.info('[add_acl] ietf_acl_data={:s}'.format(str(ietf_acl_data)))
         r = httpx.post(request_url, json=ietf_acl_data, timeout=TIMEOUT).raise_for_status()
         return r.json()

@@ -23,9 +23,13 @@ class SSLAPolicy:
     ssla_handlers = get_ssla_handlers()
 
     def map(self, request: MapRequest) -> Configuration:
-        ssla_type = request.essla_aio.name
+        ssla_type : str = request.essla_aio.name
         logger.debug('%s selected as the ssla_type', ssla_type)
+        if ssla_type.startswith('http-allow-client'):
+            ssla_type = 'http-allow-client'
+        logger.debug('processed ssla_type: %s', ssla_type)
         if ssla_type not in self.ssla_handlers:
+            logger.error('No handler for ssla_type(%s)', ssla_type)
             raise SSLANotSupportedError
         return Configuration(self.ssla_handlers[ssla_type].translate(request))
 

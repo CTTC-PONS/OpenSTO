@@ -22,4 +22,6 @@ def get_ssla_handlers() -> dict[SSLAType, SSLAHandlerProtocol]:
     ssla_handlers: dict[SSLAType, SSLAHandlerProtocol] = {}
     register_handler(SSLAType.DOS_PREVENTION, DoSHandler)
     register_handler(SSLAType.ACL, ACLHandler)
+    register_handler(SSLAType.HTTP_DEFAULT, ACLHandler)
+    register_handler(SSLAType.HTTP_ALLOW_CLIENT, ACLHandler)
     return ssla_handlers

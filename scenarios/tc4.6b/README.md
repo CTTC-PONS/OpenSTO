@@ -3,39 +3,32 @@
 This section enumerates the steps to reproduce the demo in an isolated environment for testing.
 The target scenario is described in file `scenario.txt`.
 
-## 0. Download and install ContainerLab
+
+## 0. Redeploy Firewall Agent in remote system
+By default Firewall Agent's RESTCONF/OpenConfig NBI is exposed on endpoint 0.0.0.0:8888
 ```bash
-sudo bash -c "$(curl -sL https://get.containerlab.dev)" -- -v 0.71.0
+mkdir ~/tfs-ctrl && cd ~/tfs-ctrl
+git clone --depth 1 --sparse --branch feat/344-implement-a-new-firewall-agent-controllable-through-restconf-openconfig https://labs.etsi.org/rep/tfs/controller.git .
+git sparse-checkout set src/tests/tools/firewall_agent
+cd ~/tfs-ctrl/src/tests/tools/firewall_agent/
+./redeploy.sh
 ```
 
-## 1. Download 64-bit image for Arista cEOS v4.33.5M and create Docker image
-__NOTE__: Image to be downloaded for free from [Arista](https://www.arista.com/en/login) website.
-```bash
-docker import cEOS64-lab-4.33.5M.tar ceos:4.33.5M
-```
-
-## 2. Cleanup the environment
+## 1. Cleanup the environment
 ```bash
 kubectl delete namespace tfs
 
 cd ~/opensto
 ./undeploy.sh
-./scenarios/tc4.6b/containerlab/emulated/destroy.sh
 ```
 
-## 3. Deploy ContainerLab Scenario
-```bash
-cd ~/opensto
-./scenarios/tc4.6b/containerlab/emulated/deploy.sh
-```
-
-# 4. Deploy OpenSTO
+# 2. Deploy OpenSTO
 ```bash
 cd ~/opensto
 ./deploy.sh
 ```
 
-# 5. Deploy TeraFlowSDN
+# 3. Deploy TeraFlowSDN
 __NOTE__: Typically, after deploying Docker resources, network is updated.
 This makes MicroK8s to rediscover IP addresses and trigger a redeploy of workloads.
 ```bash
@@ -47,68 +40,91 @@ cd ~/opensto
 ./scenarios/tc4.6b/tfs-ctrl/redeploy.sh
 ```
 
-# 6. Onboard topology on TeraFlowSDN
+# 4. Onboard topology on TeraFlowSDN
 ```bash
 cd ~/opensto
 source ~/tfs-ctrl/tfs_runtime_env_vars.sh
 python -m tests.tools.load_scenario ./scenarios/tc4.6b/tfs-ctrl/tfs-topology.json
 ```
 
-# 7. Register TFS Controller and Secure SLA Policy
+# 5. Register TFS Controller and Secure SLA Policies (SSLAPs)
 ```bash
 cd ~/opensto
 ./scenarios/tc4.6b/actions/register-tfs-ctrl.sh
-./scenarios/tc4.6b/actions/register-sslap.sh
+./scenarios/tc4.6b/actions/register-sslap-default.sh
+./scenarios/tc4.6b/actions/register-sslap-allow-client-1.sh
+./scenarios/tc4.6b/actions/register-sslap-allow-client-2.sh
 ```
 
-# 8. Test connectivity from Internet/Corporate to Server
-- Both should work.
+# 6. Test connectivity from Internet/Client-1/Client-2 to Server
+- Traffic from 10.0.2.0/24 to 10.0.2.25:30435/tcp should be permitted
 ```bash
-docker exec -t clab-tc46b-emu-internet bash -c 'ping -c3 -n 192.168.0.10'
-docker exec -t clab-tc46b-emu-internet bash -c 'wget -q -O- 192.168.0.10'
-
-docker exec -t clab-tc46b-emu-corporate bash -c 'ping -c3 -n 192.168.0.10'
-docker exec -t clab-tc46b-emu-corporate bash -c 'wget -q -O- 192.168.0.10'
+# from appropriate machines
+wget -q -O- http://10.0.2.25:30435
 ```
 
-# 9. Apply Secure SLA Policy
-The SSLA Policy applied includes the following rules:
-- `deny-http-from-internet-to-server`
-- `deny-http-from-server-to-internet`
-- `deny-icmp-from-internet-to-server`
-- `deny-icmp-from-server-to-internet`
-- `permit-http-from-corporate-to-server`
-- `permit-http-from-server-to-corporate`
-- `permit-icmp-from-corporate-to-server`
-- `permit-icmp-from-server-to-corporate`
-
+# 7. Apply Default SSLAP and Test Access
 ```bash
 cd ~/opensto
-./scenarios/tc4.6b/actions/apply-sslap.sh
+./scenarios/tc4.6b/actions/apply-sslap-default.sh
 ```
-
-# 10. Test connectivity from Internet/Corporate to Server
-- From Corporate should work, from Internet should be dropped.
+- Traffic from 10.0.2.0/24 to 10.0.2.25:30435/tcp should be blocked
 ```bash
-docker exec -t clab-tc46b-emu-internet bash -c 'ping -c3 -n 192.168.0.10'
-docker exec -t clab-tc46b-emu-internet bash -c 'wget -q -O- 192.168.0.10'
-
-docker exec -t clab-tc46b-emu-corporate bash -c 'ping -c3 -n 192.168.0.10'
-docker exec -t clab-tc46b-emu-corporate bash -c 'wget -q -O- 192.168.0.10'
+# from appropriate machines with IP 10.0.2.0/24
+wget -q -O- http://10.0.2.25:30435
 ```
 
-# 11. Terminate the Secure SLA Policy
+# 8. Apply SSLAP to Allow Client-1 and Test Access
 ```bash
 cd ~/opensto
-./scenarios/tc4.6b/actions/terminate-sslap.sh
+./scenarios/tc4.6b/actions/apply-sslap-allow-client-1.sh
+```
+- Traffic from 10.0.2.0/24 to 10.0.2.25:30435/tcp should be blocked, except from 10.0.2.2
+```bash
+# from appropriate machines
+wget -q -O- http://10.0.2.25:30435
 ```
 
-# 12. Test connectivity from Internet/Corporate to Server
-- Both should work again.
+# 9. Apply SSLAP to Allow Client-2 and Test Access
 ```bash
-docker exec -t clab-tc46b-emu-internet bash -c 'ping -c3 -n 192.168.0.10'
-docker exec -t clab-tc46b-emu-internet bash -c 'wget -q -O- 192.168.0.10'
+cd ~/opensto
+./scenarios/tc4.6b/actions/apply-sslap-allow-client-2.sh
+```
+- Traffic from 10.0.2.0/24 to 10.0.2.25:30435/tcp should be blocked, except from 10.0.2.2 and 10.0.2.10
+```bash
+# from appropriate machines
+wget -q -O- http://10.0.2.25:30435
+```
 
-docker exec -t clab-tc46b-emu-corporate bash -c 'ping -c3 -n 192.168.0.10'
-docker exec -t clab-tc46b-emu-corporate bash -c 'wget -q -O- 192.168.0.10'
+# 10. Terminate SSLAP to Block Client-1 and Test Access
+```bash
+cd ~/opensto
+./scenarios/tc4.6b/actions/terminate-sslap-allow-client-1.sh
+```
+- Traffic from 10.0.2.0/24 to 10.0.2.25:30435/tcp should be blocked, except from 10.0.2.10
+```bash
+# from appropriate machines
+wget -q -O- http://10.0.2.25:30435
+```
+
+# 11. Terminate SSLAP to Block Client-2 and Test Access
+```bash
+cd ~/opensto
+./scenarios/tc4.6b/actions/terminate-sslap-allow-client-2.sh
+```
+- Traffic from 10.0.2.0/24 to 10.0.2.25:30435/tcp should be blocked
+```bash
+# from appropriate machines
+wget -q -O- http://10.0.2.25:30435
+```
+
+# 12. Terminate Default SSLAP and Test Access
+```bash
+cd ~/opensto
+./scenarios/tc4.6b/actions/terminate-sslap-default.sh
+```
+- Traffic from 10.0.2.0/24 to 10.0.2.25:30435/tcp should be permitted
+```bash
+# from appropriate machines
+wget -q -O- http://10.0.2.25:30435
 ```

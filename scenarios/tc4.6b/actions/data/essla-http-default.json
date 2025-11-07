@@ -1,0 +1,87 @@
+{
+  "name": "http-default",
+  "id": "ff3f56fb-1605-4225-91c2-ec5220f11d22",
+  "href": "",
+  "sls": {
+    "description": "Default Service Level Specification for access to HTTP services",
+    "name": "http-default",
+    "validFor": {
+      "startDateTime": "2024-04-08T09:13:16-07:00",
+      "endDateTime": "2026-04-08T09:16:19-07:00"
+    },
+    "relatedServiceLevelObjective": [
+      {
+        "id": "id_slo_http_default",
+        "name": "HTTP connection attempts blocked",
+        "conformanceComparator": ">=",
+        "conformanceTarget": "99.99",
+        "conformancePeriod": {
+          "startDateTime": "2024-04-08T09:13:16-07:00",
+          "endDateTime": "2026-04-08T09:16:19-07:00"
+        },
+        "thresholdTarget": "100",
+        "toleranceTarget": "0.01",
+        "tolerancePeriod": {
+          "startDateTime": "00:00:00",
+          "endDateTime": "23:59:59"
+        },
+        "graceTimes": "0",
+        "validFor": {
+          "startDateTime": "2024-04-08T09:13:16-07:00",
+          "endDateTime": "2026-04-08T09:16:19-07:00"
+        },
+        "serviceLevelObjectiveParameter": {
+          "name": "percentage_blocked",
+          "parameterType": "KPI",
+          "serviceParmCategory": "service specific",
+          "serviceParmPerspective": "single",
+          "transformationAlgorithmOfKQI": "KeepTheSame",
+          "validFor": {
+            "startDateTime": "2024-04-08T09:13:16-07:00",
+            "endDateTime": "2026-04-08T09:16:19-07:00"
+          }
+        },
+        "serviceLevelObjectiveConsequence": {
+          "prescribedAction": "ALERT security-team@company.tld",
+          "validFor": {
+            "startDateTime": "2024-04-08T09:13:16-07:00",
+            "endDateTime": "2026-04-08T09:16:19-07:00"
+          }
+        }
+      }
+    ]
+  },
+  "policies": [
+    {
+      "i2nsf-cfi-policy": {
+        "name": "http-default-security",
+        "rules": [
+          {
+            "name": "default-deny-http-30435-from-internet",
+            "priority": 254,
+            "condition": {"firewall": {
+              "source": "internet", "destination": "server", "transport-layer-protocol": "tcp",
+              "destination-range-port-number": {"start-port-number": 30435, "end-port-number": 30435}
+            }},
+            "action": {"primary-action": {"action": "drop"}}
+          },
+          {
+            "name": "default-allow-http-30287-from-internet",
+            "priority": 255,
+            "condition": {"firewall": {
+              "source": "internet", "destination": "server", "transport-layer-protocol": "tcp",
+              "destination-range-port-number": {"start-port-number": 30287, "end-port-number": 30287}
+            }},
+            "action": {"primary-action": {"action": "pass"}}
+          }
+        ],
+        "endpoint-groups": {
+          "device-group": [
+            {"name": "internet", "ipv4": "10.0.2.0/24" },
+            {"name": "server",   "ipv4": "10.0.2.25/32"}
+          ]
+        }
+      }
+    }
+  ]
+}

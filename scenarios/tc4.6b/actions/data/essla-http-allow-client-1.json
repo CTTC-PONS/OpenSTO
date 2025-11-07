@@ -1,0 +1,78 @@
+{
+  "name": "http-allow-client-1",
+  "id": "618b4c68-7cf0-4f8e-966f-44382e6d2a95",
+  "href": "",
+  "sls": {
+    "description": "Service Level Specification for Client-1 to access HTTP services",
+    "name": "http-allow-client-1",
+    "validFor": {
+      "startDateTime": "2024-04-08T09:13:16-07:00",
+      "endDateTime": "2026-04-08T09:16:19-07:00"
+    },
+    "relatedServiceLevelObjective": [
+      {
+        "id": "id_slo_http_allow_client_1",
+        "name": "HTTP connection attempts blocked",
+        "conformanceComparator": ">=",
+        "conformanceTarget": "99.99",
+        "conformancePeriod": {
+          "startDateTime": "2024-04-08T09:13:16-07:00",
+          "endDateTime": "2026-04-08T09:16:19-07:00"
+        },
+        "thresholdTarget": "100",
+        "toleranceTarget": "0.01",
+        "tolerancePeriod": {
+          "startDateTime": "00:00:00",
+          "endDateTime": "23:59:59"
+        },
+        "graceTimes": "0",
+        "validFor": {
+          "startDateTime": "2024-04-08T09:13:16-07:00",
+          "endDateTime": "2026-04-08T09:16:19-07:00"
+        },
+        "serviceLevelObjectiveParameter": {
+          "name": "percentage_blocked",
+          "parameterType": "KPI",
+          "serviceParmCategory": "service specific",
+          "serviceParmPerspective": "single",
+          "transformationAlgorithmOfKQI": "KeepTheSame",
+          "validFor": {
+            "startDateTime": "2024-04-08T09:13:16-07:00",
+            "endDateTime": "2026-04-08T09:16:19-07:00"
+          }
+        },
+        "serviceLevelObjectiveConsequence": {
+          "prescribedAction": "ALERT security-team@company.tld",
+          "validFor": {
+            "startDateTime": "2024-04-08T09:13:16-07:00",
+            "endDateTime": "2026-04-08T09:16:19-07:00"
+          }
+        }
+      }
+    ]
+  },
+  "policies": [
+    {
+      "i2nsf-cfi-policy": {
+        "name": "http-allow-client-1",
+        "rules": [
+          {
+            "name": "allow-http-30435-from-client-1",
+            "priority": 0,
+            "condition": {"firewall": {
+              "source": "client-1", "destination": "server", "transport-layer-protocol": "tcp",
+              "destination-range-port-number": {"start-port-number": 30435, "end-port-number": 30435}
+            }},
+            "action": {"primary-action": {"action": "pass"}}
+          }
+        ],
+        "endpoint-groups": {
+          "device-group": [
+            {"name": "client-1", "ipv4": "10.0.2.2/32" },
+            {"name": "server",   "ipv4": "10.0.2.25/32"}
+          ]
+        }
+      }
+    }
+  ]
+}

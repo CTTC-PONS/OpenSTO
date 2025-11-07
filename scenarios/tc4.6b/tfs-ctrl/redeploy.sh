@@ -13,6 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-source ~/tfs-ctrl/across_demos/tc4.6b/tfs-ctrl/deploy_specs.sh
+source ~/tfs-ctrl/across_demos/opensto/scenarios/tc4.6b/tfs-ctrl/deploy_specs.sh
 cd ~/tfs-ctrl
 ./deploy/all.sh

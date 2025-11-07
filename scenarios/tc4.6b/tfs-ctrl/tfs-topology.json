@@ -34,7 +34,7 @@
         },
         {
             "device_id": {"device_uuid": {"uuid": "client-1"}}, "device_type": "emu-client",
-            "device_drivers": ["DEVICEDRIVER_EMULATED"],
+            "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
             "device_config": {"config_rules": [
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
@@ -46,7 +46,7 @@
         },
         {
             "device_id": {"device_uuid": {"uuid": "client-2"}}, "device_type": "emu-client",
-            "device_drivers": ["DEVICEDRIVER_EMULATED"],
+            "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
             "device_config": {"config_rules": [
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},

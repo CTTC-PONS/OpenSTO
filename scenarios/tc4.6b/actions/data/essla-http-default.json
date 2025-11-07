@@ -63,7 +63,7 @@
               "source": "internet", "destination": "server", "transport-layer-protocol": "tcp",
               "destination-range-port-number": {"start-port-number": 30435, "end-port-number": 30435}
             }},
-            "action": {"primary-action": {"action": "drop"}}
+            "action": {"primary-action": {"action": "reject"}}
           },
           {
             "name": "default-allow-http-30287-from-internet",

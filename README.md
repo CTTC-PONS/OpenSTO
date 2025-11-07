@@ -58,8 +58,8 @@ flowchart LR
     A[Analytics & Trust Scoring]
     P[Policy Engine]
     D[Decision/Orchestration]
-    E[Enforcement Adapter(s)]
-    DB[(State/DB)]
+    E[Enforcement Adapters]
+    DB[State/DB]
   end
 
   subgraph Targets[Targets]

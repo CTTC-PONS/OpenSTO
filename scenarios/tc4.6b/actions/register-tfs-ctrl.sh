@@ -7,16 +7,20 @@ cd $(dirname $0)
 
 SIDECAR_HOSTNAME_PORT="127.0.0.1:7070"
 
-response=$(curl -s -w "HTTPSTATUS:%{http_code}" \
+# SDN Controller Registration
+RESPONSE=$(curl -s -w "HTTPSTATUS:%{http_code}" \
     -X POST -H "Content-Type: application/json" \
     -d @./data/tfs-controller.json \
     http://$SIDECAR_HOSTNAME_PORT/common/controller/)
 
-body=$(echo "$response" | sed -e 's/HTTPSTATUS\:.*//')
-status_code=$(echo "$response" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
-if [ $status_code -lt 200 ] || [ $status_code -gt 299 ] ; then
-    echo "Controller registration failed"
-    exit 1
-fi
+STATUS_CODE=$(echo "$RESPONSE" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+BODY=$(echo "$RESPONSE" | sed -e 's/HTTPSTATUS\:.*//')
+echo "STATUS_CODE: ${STATUS_CODE}"
+echo "BODY: ${BODY}"
 
-echo "TFS controller registered"
+if [ $STATUS_CODE -lt 200 ] || [ $STATUS_CODE -gt 299 ] ; then
+    echo "SDN Controller registration failed"
+    exit 1
+else
+    echo "SDN controller registered"
+fi

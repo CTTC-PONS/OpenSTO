@@ -8,16 +8,19 @@ cd $(dirname $0)
 SIDECAR_HOSTNAME_PORT="127.0.0.1:7070"
 SERVICE_ID="b78aacc6-5fd9-4ebb-a613-851fde059137"
 
-# Service termination
-response=$(curl -s -w "HTTPSTATUS:%{http_code}" \
+# SSLA Termination
+RESPONSE=$(curl -s -w "HTTPSTATUS:%{http_code}" \
     -X DELETE -H "Content-Type: application/json" \
     http://$SIDECAR_HOSTNAME_PORT/opensto/api/v1/service/apply/$SERVICE_ID)
 
-body=$(echo "$response" | sed -e 's/HTTPSTATUS\:.*//')
-status_code=$(echo "$response" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
-if [ $status_code -lt 200 ] || [ $status_code -gt 299 ] ; then
-    echo "Service termination failed"
-    exit 1
-fi
+STATUS_CODE=$(echo "$RESPONSE" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+BODY=$(echo "$RESPONSE" | sed -e 's/HTTPSTATUS\:.*//')
+echo "STATUS_CODE: ${STATUS_CODE}"
+echo "BODY: ${BODY}"
 
-echo "Security service terminated"
+if [ $STATUS_CODE -lt 200 ] || [ $STATUS_CODE -gt 299 ] ; then
+    echo "SSLA termination failed"
+    exit 1
+else
+    echo "SSLA terminated"
+fi

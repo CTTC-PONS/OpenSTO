@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Demo scenario values
-PUBLIC_PREFIX="192.168.100.0/24"
+PUBLIC_PREFIX="172.16.100.0/24"
 SERVER_IP="10.10.10.30"
 SERVER_IFACE="ens3"
 WEBUI_PORT="30807"

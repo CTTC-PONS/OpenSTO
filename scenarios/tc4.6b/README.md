@@ -33,6 +33,7 @@ __NOTE__: Typically, after deploying Docker resources, network is updated.
 This makes MicroK8s to rediscover IP addresses and trigger a redeploy of workloads.
 ```bash
 # Wait for MicroK8s to stabilize...
+microk8s start
 watch -n 1 kubectl get pods -A
 
 # ... then deploy TeraFlowSDN

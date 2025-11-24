@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package traffic.sniffer.v1;
+
+service TrafficSniffer {
+  rpc Configure(Configuration) returns (Configuration) {}
+  rpc GetConfig(Empty        ) returns (Configuration) {}
+  rpc Start    (Empty        ) returns (Status       ) {}
+  rpc Stop     (Empty        ) returns (Status       ) {}
+  rpc GetStatus(Empty        ) returns (Status       ) {}
+}
+
+message Empty {}
+
+message Configuration {
+  string source_interface = 1;
+  string capture_filter   = 2;
+}
+
+enum StatusEnum {
+  STATUS_UNKNOWN = 0;
+  STATUS_STOPPED = 1;
+  STATUS_RUNNING = 2;
+}
+
+message Status {
+  StatusEnum status = 1;
+  string detail = 2;
+}

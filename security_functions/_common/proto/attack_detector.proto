@@ -1,0 +1,21 @@
+syntax = "proto3";
+package attack_detector;
+
+service AttackDetector {
+    rpc ConfigureAttack       (AttackSpecs) returns (       Empty      ) {}
+    rpc ListConfiguredAttacks (Empty      ) returns (stream AttackSpecs) {}
+    rpc GetConfiguredAttack   (AttackId   ) returns (       AttackSpecs) {}
+    rpc DeconfigureAttack     (AttackId   ) returns (       Empty      ) {}
+}
+
+message Empty {}
+
+message AttackId {
+    string attack_uuid = 1;
+}
+
+message AttackSpecs {
+    AttackId attack_id               = 1;
+    float    probability_threshold   = 2;
+    float    min_ml_confidence_level = 3;
+}

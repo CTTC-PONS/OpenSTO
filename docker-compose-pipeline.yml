@@ -1,0 +1,88 @@
+services:
+  kafka:
+    image: bitnamilegacy/kafka:latest
+    container_name: kafka
+    ports:
+      - "9092:9092"
+      - "9093:9093"
+    environment:
+      - KAFKA_BROKER_ID=1
+      - KAFKA_CFG_PROCESS_ROLES=broker,controller
+      - KAFKA_CFG_NODE_ID=1
+      - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=1@kafka:9093
+      - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+      - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=PLAINTEXT
+      - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=true
+      - KAFKA_KRAFT_CLUSTER_ID=3LZhC1R3Q4K9pLJZkO6RxA
+      - ALLOW_PLAINTEXT_LISTENER=yes
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - kafka-topics.sh --list --bootstrap-server localhost:9092 || exit 1
+      start_period: 10s
+      retries: 60
+      interval: 5s
+      timeout: 60s
+
+  topic_monitor:
+    image: topic-monitor:dev
+    build: ./security_functions/topic_monitor
+    depends_on:
+      kafka:
+        condition: service_healthy
+    environment:
+      - KAFKA_SERVER=kafka:9092
+      - CONSUMER_TOPICS=traffic_flows,inference_probs,attacks_detected,acls
+
+  traffic_sniffer:
+    image: traffic-sniffer:dev
+    build: ./security_functions/traffic_sniffer
+    depends_on:
+      kafka:
+        condition: service_healthy
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      - MONITORED_DEVICE=${MONITORED_DEVICE:-"ceos14_ACL"}
+      - SNIFFER_INTERFACE=${SNIFFER_INTERFACE:-"eth1"}
+      - SNIFFER_CAPTURE_FILTER=${SNIFFER_CAPTURE_FILTER:-""}
+      - KAFKA_SERVER=kafka:9092
+      - PUBISHER_TOPIC=traffic_flows
+
+  ai_inference:
+    image: ai-inference:dev
+    build: ./security_functions/ai_inference
+    depends_on:
+      kafka:
+        condition: service_healthy
+    environment:
+      - KAFKA_SERVER=kafka:9092
+      - CONSUMER_TOPIC=traffic_flows
+      - PUBISHER_TOPIC=inference_probs
+
+  attack_detector:
+    image: attack-detector:dev
+    build: ./security_functions/attack_detector
+    depends_on:
+      kafka:
+        condition: service_healthy
+    environment:
+      - KAFKA_SERVER=kafka:9092
+      - CONSUMER_TOPIC=inference_probs
+      - PUBISHER_TOPIC=attacks_detected
+
+  attack_mitigator:
+    image: attack-mitigator:dev
+    build: ./security_functions/attack_mitigator
+    depends_on:
+      kafka:
+        condition: service_healthy
+    environment:
+      - KAFKA_SERVER=kafka:9092
+      - CONSUMER_TOPIC=attacks_detected
+      - PUBISHER_TOPIC=acls

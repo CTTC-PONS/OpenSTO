@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd $(dirname $0)/security_functions
+cd $(dirname $0)
 
 docker buildx build -t traffic-sniffer:dev  -f ./traffic_sniffer/Dockerfile  .
 docker buildx build -t ai-inference:dev     -f ./ai_inference/Dockerfile     .

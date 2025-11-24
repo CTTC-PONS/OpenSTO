@@ -1,0 +1,153 @@
+name: tc3.5-emu
+
+mgmt:
+  network: mgmt-net
+  ipv4-subnet: 172.20.20.0/24
+  mtu: 1400
+
+topology:
+  nodes:
+    DDosClient10:
+      kind: linux
+      image: ghcr.io/srl-labs/network-multitool:latest
+      mgmt-ipv4: 172.20.20.201
+      exec:
+        - ip link set address 00:c1:ab:00:02:01 dev eth1
+        - ip address add 13.0.1.1/24 dev eth1
+        - ip route add 192.168.16.0/24 via 13.0.1.14
+
+    DDosClient11:
+      kind: linux
+      image: ghcr.io/srl-labs/network-multitool:latest
+      mgmt-ipv4: 172.20.20.202
+      exec:
+        - ip link set address 00:c1:ab:00:02:02 dev eth1
+        - ip address add 13.0.2.1/24 dev eth1
+        - ip route add 192.168.16.0/24 via 13.0.2.14
+
+    ceos13:
+      kind: linux
+      image: ghcr.io/srl-labs/network-multitool:latest
+      mgmt-ipv4: 172.20.20.203
+      exec:
+        - ip link set address 00:c1:ab:00:02:03 dev eth23
+        - ip address add 192.168.16.13/24 dev eth23
+        - ip route add 13.0.1.0/24 via 192.168.16.14
+        - ip route add 13.0.2.0/24 via 192.168.16.14
+
+    ceos14_ACL:
+      kind: arista_ceos
+      image: ceos:4.33.1F
+      mgmt-ipv4: 172.20.20.101
+      env:
+        CEOS: "1"
+        CLAB_MGMT_SNAT: "0"
+      ports:
+        - "6030:6030/tcp"
+      startup-config: ceos14-startup.cfg
+
+    kafka:
+      kind: linux
+      image: bitnamilegacy/kafka:latest
+      mgmt-ipv4: 172.20.20.150
+      ports:
+        - "9092:9092/tcp"
+        - "9093:9093/tcp"
+      env:
+        KAFKA_BROKER_ID: "1"
+        KAFKA_CFG_PROCESS_ROLES: "broker,controller"
+        KAFKA_CFG_NODE_ID: "1"
+        KAFKA_CFG_CONTROLLER_QUORUM_VOTERS: "1@172.20.20.150:9093"
+        KAFKA_CFG_CONTROLLER_LISTENER_NAMES: "CONTROLLER"
+        KAFKA_CFG_LISTENERS: "PLAINTEXT://:9092,CONTROLLER://:9093"
+        KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP: "CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT"
+        KAFKA_CFG_ADVERTISED_LISTENERS: "PLAINTEXT://172.20.20.150:9092"
+        KAFKA_CFG_INTER_BROKER_LISTENER_NAME: "PLAINTEXT"
+        KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE: "true"
+        KAFKA_KRAFT_CLUSTER_ID: "3LZhC1R3Q4K9pLJZkO6RxA"
+        ALLOW_PLAINTEXT_LISTENER: "yes"
+      healthcheck:
+        test:
+          - CMD-SHELL
+          - kafka-topics.sh --list --bootstrap-server localhost:9092 || exit 1
+        start-period: 10
+        retries: 60
+        interval: 5
+        timeout: 60
+
+    topic_monitor:
+      kind: linux
+      image: topic-monitor:dev
+      mgmt-ipv4: 172.20.20.151
+      env:
+        KAFKA_SERVER    : "172.20.20.150:9092"
+        CONSUMER_TOPICS : "traffic_flows,inference_probs,attacks_detected,acls"
+      stages:
+        create:
+          wait-for:
+            - node: kafka
+              stage: healthy
+
+    traffic_sniffer:
+      kind: linux
+      image: traffic-sniffer:dev
+      mgmt-ipv4: 172.20.20.152
+      env:
+        MONITORED_DEVICE       : "ceos14_ACL"
+        SNIFFER_INTERFACE      : "eth1"
+        SNIFFER_CAPTURE_FILTER : ""
+        KAFKA_SERVER           : "172.20.20.150:9092"
+        PUBISHER_TOPIC         : "traffic_flows"
+      stages:
+        create:
+          wait-for:
+            - node: kafka
+              stage: healthy
+
+    ai_inference:
+      kind: linux
+      image: ai-inference:dev
+      mgmt-ipv4: 172.20.20.153
+      env:
+        KAFKA_SERVER   : "172.20.20.150:9092"
+        CONSUMER_TOPIC : "traffic_flows"
+        PUBISHER_TOPIC : "inference_probs"
+      stages:
+        create:
+          wait-for:
+            - node: kafka
+              stage: healthy
+
+    attack_detector:
+      kind: linux
+      image: attack-detector:dev
+      mgmt-ipv4: 172.20.20.154
+      env:
+        KAFKA_SERVER   : "172.20.20.150:9092"
+        CONSUMER_TOPIC : "inference_probs"
+        PUBISHER_TOPIC : "attacks_detected"
+      stages:
+        create:
+          wait-for:
+            - node: kafka
+              stage: healthy
+
+    attack_mitigator:
+      kind: linux
+      image: attack-mitigator:dev
+      mgmt-ipv4: 172.20.20.155
+      env:
+        KAFKA_SERVER   : "172.20.20.150:9092"
+        CONSUMER_TOPIC : "attacks_detected"
+        PUBISHER_TOPIC : "acls"
+      stages:
+        create:
+          wait-for:
+            - node: kafka
+              stage: healthy
+
+  links:
+    - endpoints: ["ceos14_ACL:eth1", "DDosClient10:eth1"   ]
+    - endpoints: ["ceos14_ACL:eth2", "ceos13:eth23"        ]
+    - endpoints: ["ceos14_ACL:eth3", "DDosClient11:eth1"   ]
+    - endpoints: ["ceos14_ACL:eth4", "traffic_sniffer:eth1"]

@@ -1,2 +1,6 @@
 __pycache__/
 .venv/
+tmp/
+temp/
+_tmp/
+_temp/

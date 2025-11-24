@@ -12,7 +12,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.1.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.1.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -21,7 +21,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.2.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.2.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -30,7 +30,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.3.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.3.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -39,7 +39,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.4.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.4.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -48,7 +48,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.5.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.5.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -57,7 +57,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.6.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.6.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -66,7 +66,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.7.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.7.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -75,7 +75,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.8.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.8.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -84,7 +84,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.9.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.9.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -93,7 +93,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.10.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.10.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -102,7 +102,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.11.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.11.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -111,7 +111,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.12.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.12.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -120,7 +120,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.13.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.13.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -129,7 +129,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.14.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.14.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -138,7 +138,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.15.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.15.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -147,7 +147,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.16.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.16.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -156,7 +156,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.17.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.17.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -165,7 +165,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.18.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.18.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -174,7 +174,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.19.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.19.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -183,7 +183,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.20.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.20.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -192,7 +192,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.21.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.21.1", "address_prefix": 24}}}
             ]}
         },
 
@@ -202,7 +202,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "11.0.1.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "11.0.1.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -211,7 +211,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "11.0.2.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "11.0.2.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -220,7 +220,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "11.0.3.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "11.0.3.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -229,7 +229,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "11.0.4.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "11.0.4.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -238,7 +238,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "11.0.5.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "11.0.5.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -247,7 +247,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "11.0.6.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "11.0.6.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -256,7 +256,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "11.0.7.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "11.0.7.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -265,7 +265,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "11.0.8.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "11.0.8.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -274,7 +274,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "11.0.9.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "11.0.9.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -283,7 +283,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "13.0.1.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "13.0.1.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -292,7 +292,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "13.0.2.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "13.0.2.1", "address_prefix": 24}}}
             ]}
         },
 
@@ -302,7 +302,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.81.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.81.1", "address_prefix": 24}}}
             ]}
         },
         {
@@ -311,7 +311,7 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "10.0.80.1", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "10.0.80.1", "address_prefix": 24}}}
             ]}
         },
 
@@ -321,8 +321,8 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}, {"uuid": "eth2", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "192.168.15.1", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth2]/settings", "resource_value": {"address_ip": "12.12.12.2", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "192.168.15.1", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth2]/subinterface[0]", "resource_value": {"address_ip": "12.12.12.2", "address_prefix": 24}}}
             ]}
         },
         {
@@ -331,8 +331,8 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}, {"uuid": "eth2", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "12.12.12.1", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth2]/settings", "resource_value": {"address_ip": "192.168.159.2", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "12.12.12.1", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth2]/subinterface[0]", "resource_value": {"address_ip": "192.168.159.2", "address_prefix": 24}}}
             ]}
         },
         {
@@ -341,13 +341,13 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
-                    {"uuid": "Gi2", "type": "copper"}, {"uuid": "Gi3", "type": "copper"},
-                    {"uuid": "Gi4", "type": "copper"}, {"uuid": "Gi5", "type": "copper"}
+                    {"uuid": "Ethernet2", "type": "copper"}, {"uuid": "Ethernet3", "type": "copper"},
+                    {"uuid": "Ethernet4", "type": "copper"}, {"uuid": "Ethernet5", "type": "copper"}
                 ]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi2]/settings", "resource_value": {"address_ip": "192.168.3.1", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi3]/settings", "resource_value": {"address_ip": "192.168.4.1", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi4]/settings", "resource_value": {"address_ip": "192.168.1.1", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi5]/settings", "resource_value": {"address_ip": "10.0.80.2", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet2]/subinterface[0]", "resource_value": {"address_ip": "192.168.3.1", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet3]/subinterface[0]", "resource_value": {"address_ip": "192.168.4.1", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet4]/subinterface[0]", "resource_value": {"address_ip": "192.168.1.1", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet5]/subinterface[0]", "resource_value": {"address_ip": "10.0.80.2", "address_prefix": 24}}}
             ]}
         },
         {
@@ -356,14 +356,14 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
-                    {"uuid": "Gi1", "type": "copper"}, {"uuid": "Gi2", "type": "copper"}, {"uuid": "Gi3", "type": "copper"},
-                    {"uuid": "Gi4", "type": "copper"}, {"uuid": "Gi5", "type": "copper"}
+                    {"uuid": "Ethernet1", "type": "copper"}, {"uuid": "Ethernet2", "type": "copper"}, {"uuid": "Ethernet3", "type": "copper"},
+                    {"uuid": "Ethernet4", "type": "copper"}, {"uuid": "Ethernet5", "type": "copper"}
                 ]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi1]/settings", "resource_value": {"address_ip": "192.168.15.2", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi2]/settings", "resource_value": {"address_ip": "192.168.13.2", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi3]/settings", "resource_value": {"address_ip": "192.168.4.2", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi4]/settings", "resource_value": {"address_ip": "192.168.8.2", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi5]/settings", "resource_value": {"address_ip": "192.168.6.2", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet1]/subinterface[0]", "resource_value": {"address_ip": "192.168.15.2", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet2]/subinterface[0]", "resource_value": {"address_ip": "192.168.13.2", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet3]/subinterface[0]", "resource_value": {"address_ip": "192.168.4.2", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet4]/subinterface[0]", "resource_value": {"address_ip": "192.168.8.2", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet5]/subinterface[0]", "resource_value": {"address_ip": "192.168.6.2", "address_prefix": 24}}}
             ]}
         },
         {
@@ -372,14 +372,14 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
-                    {"uuid": "Gi1", "type": "copper"}, {"uuid": "Gi2", "type": "copper"}, {"uuid": "Gi3", "type": "copper"},
-                    {"uuid": "Gi4", "type": "copper"}, {"uuid": "Gi5", "type": "copper"}
+                    {"uuid": "Ethernet1", "type": "copper"}, {"uuid": "Ethernet2", "type": "copper"}, {"uuid": "Ethernet3", "type": "copper"},
+                    {"uuid": "Ethernet4", "type": "copper"}, {"uuid": "Ethernet5", "type": "copper"}
                 ]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi1]/settings", "resource_value": {"address_ip": "10.0.81.3", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi2]/settings", "resource_value": {"address_ip": "192.168.12.3", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi3]/settings", "resource_value": {"address_ip": "192.168.10.3", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi4]/settings", "resource_value": {"address_ip": "192.168.8.3", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi5]/settings", "resource_value": {"address_ip": "192.168.14.3", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet1]/subinterface[0]", "resource_value": {"address_ip": "10.0.81.3", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet2]/subinterface[0]", "resource_value": {"address_ip": "192.168.12.3", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet3]/subinterface[0]", "resource_value": {"address_ip": "192.168.10.3", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet4]/subinterface[0]", "resource_value": {"address_ip": "192.168.8.3", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet5]/subinterface[0]", "resource_value": {"address_ip": "192.168.14.3", "address_prefix": 24}}}
             ]}
         },
         {
@@ -388,11 +388,11 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
-                    {"uuid": "Gi2", "type": "copper"}, {"uuid": "Gi3", "type": "copper"}, {"uuid": "Gi4", "type": "copper"}
+                    {"uuid": "Ethernet2", "type": "copper"}, {"uuid": "Ethernet3", "type": "copper"}, {"uuid": "Ethernet4", "type": "copper"}
                 ]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi2]/settings", "resource_value": {"address_ip": "192.168.3.4", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi3]/settings", "resource_value": {"address_ip": "192.168.2.4", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi4]/settings", "resource_value": {"address_ip": "192.168.5.4", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet2]/subinterface[0]", "resource_value": {"address_ip": "192.168.3.4", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet3]/subinterface[0]", "resource_value": {"address_ip": "192.168.2.4", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet4]/subinterface[0]", "resource_value": {"address_ip": "192.168.5.4", "address_prefix": 24}}}
             ]}
         },
         {
@@ -401,10 +401,10 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
-                    {"uuid": "Gi2", "type": "copper"}, {"uuid": "Gi3", "type": "copper"}
+                    {"uuid": "Ethernet2", "type": "copper"}, {"uuid": "Ethernet3", "type": "copper"}
                 ]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi2]/settings", "resource_value": {"address_ip": "192.168.6.5", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi3]/settings", "resource_value": {"address_ip": "192.168.7.5", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet2]/subinterface[0]", "resource_value": {"address_ip": "192.168.6.5", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet3]/subinterface[0]", "resource_value": {"address_ip": "192.168.7.5", "address_prefix": 24}}}
             ]}
         },
         {
@@ -413,11 +413,11 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
-                    {"uuid": "Gi2", "type": "copper"}, {"uuid": "Gi3", "type": "copper"}, {"uuid": "Gi4", "type": "copper"}
+                    {"uuid": "Ethernet2", "type": "copper"}, {"uuid": "Ethernet3", "type": "copper"}, {"uuid": "Ethernet4", "type": "copper"}
                 ]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi2]/settings", "resource_value": {"address_ip": "192.168.9.6", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi3]/settings", "resource_value": {"address_ip": "192.168.7.6", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi4]/settings", "resource_value": {"address_ip": "192.168.5.6", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet2]/subinterface[0]", "resource_value": {"address_ip": "192.168.9.6", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet3]/subinterface[0]", "resource_value": {"address_ip": "192.168.7.6", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet4]/subinterface[0]", "resource_value": {"address_ip": "192.168.5.6", "address_prefix": 24}}}
             ]}
         },
         {
@@ -426,11 +426,11 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
-                    {"uuid": "Gi2", "type": "copper"}, {"uuid": "Gi3", "type": "copper"}, {"uuid": "Gi4", "type": "copper"}
+                    {"uuid": "Ethernet2", "type": "copper"}, {"uuid": "Ethernet3", "type": "copper"}, {"uuid": "Ethernet4", "type": "copper"}
                 ]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi2]/settings", "resource_value": {"address_ip": "192.168.9.7", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi3]/settings", "resource_value": {"address_ip": "192.168.11.7", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi4]/settings", "resource_value": {"address_ip": "192.168.10.7", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet2]/subinterface[0]", "resource_value": {"address_ip": "192.168.9.7", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet3]/subinterface[0]", "resource_value": {"address_ip": "192.168.11.7", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet4]/subinterface[0]", "resource_value": {"address_ip": "192.168.10.7", "address_prefix": 24}}}
             ]}
         },
         {
@@ -439,42 +439,42 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
-                    {"uuid": "Gi1", "type": "copper"}, {"uuid": "Gi2", "type": "copper"},
-                    {"uuid": "Gi3", "type": "copper"}, {"uuid": "Gi4", "type": "copper"},
-                    {"uuid": "Gi5", "type": "copper"}, {"uuid": "Gi6", "type": "copper"},
-                    {"uuid": "Gi7", "type": "copper"}, {"uuid": "Gi8", "type": "copper"},
-                    {"uuid": "Gi9", "type": "copper"}, {"uuid": "Gi10", "type": "copper"},
-                    {"uuid": "Gi11", "type": "copper"}, {"uuid": "Gi12", "type": "copper"},
-                    {"uuid": "Gi13", "type": "copper"}, {"uuid": "Gi14", "type": "copper"},
-                    {"uuid": "Gi15", "type": "copper"}, {"uuid": "Gi16", "type": "copper"},
-                    {"uuid": "Gi17", "type": "copper"}, {"uuid": "Gi18", "type": "copper"},
-                    {"uuid": "Gi19", "type": "copper"}, {"uuid": "Gi20", "type": "copper"},
-                    {"uuid": "Gi21", "type": "copper"}, {"uuid": "Gi22", "type": "copper"},
-                    {"uuid": "Gi23", "type":"copper"}
+                    {"uuid": "Ethernet1", "type": "copper"}, {"uuid": "Ethernet2", "type": "copper"},
+                    {"uuid": "Ethernet3", "type": "copper"}, {"uuid": "Ethernet4", "type": "copper"},
+                    {"uuid": "Ethernet5", "type": "copper"}, {"uuid": "Ethernet6", "type": "copper"},
+                    {"uuid": "Ethernet7", "type": "copper"}, {"uuid": "Ethernet8", "type": "copper"},
+                    {"uuid": "Ethernet9", "type": "copper"}, {"uuid": "Ethernet10", "type": "copper"},
+                    {"uuid": "Ethernet11", "type": "copper"}, {"uuid": "Ethernet12", "type": "copper"},
+                    {"uuid": "Ethernet13", "type": "copper"}, {"uuid": "Ethernet14", "type": "copper"},
+                    {"uuid": "Ethernet15", "type": "copper"}, {"uuid": "Ethernet16", "type": "copper"},
+                    {"uuid": "Ethernet17", "type": "copper"}, {"uuid": "Ethernet18", "type": "copper"},
+                    {"uuid": "Ethernet19", "type": "copper"}, {"uuid": "Ethernet20", "type": "copper"},
+                    {"uuid": "Ethernet21", "type": "copper"}, {"uuid": "Ethernet22", "type": "copper"},
+                    {"uuid": "Ethernet23", "type":"copper"}
                 ]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi1]/settings", "resource_value": {"address_ip": "10.0.1.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi2]/settings", "resource_value": {"address_ip": "192.168.1.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi3]/settings", "resource_value": {"address_ip": "192.168.2.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi4]/settings", "resource_value": {"address_ip": "10.0.2.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi5]/settings", "resource_value": {"address_ip": "10.0.3.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi6]/settings", "resource_value": {"address_ip": "10.0.4.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi7]/settings", "resource_value": {"address_ip": "10.0.5.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi8]/settings", "resource_value": {"address_ip": "10.0.6.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi9]/settings", "resource_value": {"address_ip": "10.0.7.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi10]/settings", "resource_value": {"address_ip": "10.0.8.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi11]/settings", "resource_value": {"address_ip": "10.0.9.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi12]/settings", "resource_value": {"address_ip": "10.0.10.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi13]/settings", "resource_value": {"address_ip": "10.0.11.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi14]/settings", "resource_value": {"address_ip": "10.0.12.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi15]/settings", "resource_value": {"address_ip": "10.0.13.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi16]/settings", "resource_value": {"address_ip": "10.0.14.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi17]/settings", "resource_value": {"address_ip": "10.0.15.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi18]/settings", "resource_value": {"address_ip": "10.0.16.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi19]/settings", "resource_value": {"address_ip": "10.0.17.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi20]/settings", "resource_value": {"address_ip": "10.0.18.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi21]/settings", "resource_value": {"address_ip": "10.0.19.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi22]/settings", "resource_value": {"address_ip": "10.0.20.11", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi23]/settings", "resource_value": {"address_ip": "10.0.21.11", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet1]/subinterface[0]", "resource_value": {"address_ip": "10.0.1.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet2]/subinterface[0]", "resource_value": {"address_ip": "192.168.1.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet3]/subinterface[0]", "resource_value": {"address_ip": "192.168.2.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet4]/subinterface[0]", "resource_value": {"address_ip": "10.0.2.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet5]/subinterface[0]", "resource_value": {"address_ip": "10.0.3.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet6]/subinterface[0]", "resource_value": {"address_ip": "10.0.4.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet7]/subinterface[0]", "resource_value": {"address_ip": "10.0.5.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet8]/subinterface[0]", "resource_value": {"address_ip": "10.0.6.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet9]/subinterface[0]", "resource_value": {"address_ip": "10.0.7.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet10]/subinterface[0]", "resource_value": {"address_ip": "10.0.8.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet11]/subinterface[0]", "resource_value": {"address_ip": "10.0.9.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet12]/subinterface[0]", "resource_value": {"address_ip": "10.0.10.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet13]/subinterface[0]", "resource_value": {"address_ip": "10.0.11.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet14]/subinterface[0]", "resource_value": {"address_ip": "10.0.12.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet15]/subinterface[0]", "resource_value": {"address_ip": "10.0.13.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet16]/subinterface[0]", "resource_value": {"address_ip": "10.0.14.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet17]/subinterface[0]", "resource_value": {"address_ip": "10.0.15.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet18]/subinterface[0]", "resource_value": {"address_ip": "10.0.16.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet19]/subinterface[0]", "resource_value": {"address_ip": "10.0.17.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet20]/subinterface[0]", "resource_value": {"address_ip": "10.0.18.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet21]/subinterface[0]", "resource_value": {"address_ip": "10.0.19.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet22]/subinterface[0]", "resource_value": {"address_ip": "10.0.20.11", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet23]/subinterface[0]", "resource_value": {"address_ip": "10.0.21.11", "address_prefix": 24}}}
 
             ]}
         },
@@ -484,10 +484,10 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
-                    {"uuid": "Gi2", "type": "copper"}, {"uuid": "Gi4", "type": "copper"}
+                    {"uuid": "Ethernet2", "type": "copper"}, {"uuid": "Ethernet4", "type": "copper"}
                 ]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi2]/settings", "resource_value": {"address_ip": "192.168.13.12", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi4]/settings", "resource_value": {"address_ip": "192.168.14.12", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet2]/subinterface[0]", "resource_value": {"address_ip": "192.168.13.12", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet4]/subinterface[0]", "resource_value": {"address_ip": "192.168.14.12", "address_prefix": 24}}}
             ]}
         },
         {
@@ -496,23 +496,23 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
-                    {"uuid": "Gi1", "type": "copper"}, {"uuid": "Gi2", "type": "copper"}, {"uuid": "Gi3", "type": "copper"},
-                    {"uuid": "Gi4", "type": "copper"}, {"uuid": "Gi5", "type": "copper"}, {"uuid": "Gi6", "type": "copper"},
-                    {"uuid": "Gi7", "type": "copper"}, {"uuid": "Gi8", "type": "copper"}, {"uuid": "Gi9", "type": "copper"},
-                    {"uuid": "Gi10", "type": "copper"}, {"uuid": "Gi11", "type": "copper"}, {"uuid": "Gi23", "type":"copper"}
+                    {"uuid": "Ethernet1", "type": "copper"}, {"uuid": "Ethernet2", "type": "copper"}, {"uuid": "Ethernet3", "type": "copper"},
+                    {"uuid": "Ethernet4", "type": "copper"}, {"uuid": "Ethernet5", "type": "copper"}, {"uuid": "Ethernet6", "type": "copper"},
+                    {"uuid": "Ethernet7", "type": "copper"}, {"uuid": "Ethernet8", "type": "copper"}, {"uuid": "Ethernet9", "type": "copper"},
+                    {"uuid": "Ethernet10", "type": "copper"}, {"uuid": "Ethernet11", "type": "copper"}, {"uuid": "Ethernet23", "type":"copper"}
                 ]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi1]/settings", "resource_value": {"address_ip": "11.0.1.13", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi2]/settings", "resource_value": {"address_ip": "192.168.12.13", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi3]/settings", "resource_value": {"address_ip": "192.168.11.13", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi4]/settings", "resource_value": {"address_ip": "11.0.2.13", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi5]/settings", "resource_value": {"address_ip": "11.0.3.13", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi6]/settings", "resource_value": {"address_ip": "11.0.4.13", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi7]/settings", "resource_value": {"address_ip": "11.0.5.13", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi8]/settings", "resource_value": {"address_ip": "11.0.6.13", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi9]/settings", "resource_value": {"address_ip": "11.0.7.13", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi10]/settings", "resource_value": {"address_ip": "11.0.8.13", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi11]/settings", "resource_value": {"address_ip": "11.0.9.13", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi23]/settings", "resource_value": {"address_ip": "192.168.16.13", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet1]/subinterface[0]", "resource_value": {"address_ip": "11.0.1.13", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet2]/subinterface[0]", "resource_value": {"address_ip": "192.168.12.13", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet3]/subinterface[0]", "resource_value": {"address_ip": "192.168.11.13", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet4]/subinterface[0]", "resource_value": {"address_ip": "11.0.2.13", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet5]/subinterface[0]", "resource_value": {"address_ip": "11.0.3.13", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet6]/subinterface[0]", "resource_value": {"address_ip": "11.0.4.13", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet7]/subinterface[0]", "resource_value": {"address_ip": "11.0.5.13", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet8]/subinterface[0]", "resource_value": {"address_ip": "11.0.6.13", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet9]/subinterface[0]", "resource_value": {"address_ip": "11.0.7.13", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet10]/subinterface[0]", "resource_value": {"address_ip": "11.0.8.13", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet11]/subinterface[0]", "resource_value": {"address_ip": "11.0.9.13", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet23]/subinterface[0]", "resource_value": {"address_ip": "192.168.16.13", "address_prefix": 24}}}
 
             ]}
         },
@@ -522,11 +522,11 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [
-                    {"uuid": "Gi1", "type": "copper"}, {"uuid": "Gi2", "type": "copper"}, {"uuid": "Gi3", "type": "copper"}
+                    {"uuid": "Ethernet1", "type": "copper"}, {"uuid": "Ethernet2", "type": "copper"}, {"uuid": "Ethernet3", "type": "copper"}
                 ]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi1]/settings", "resource_value": {"address_ip": "13.0.1.14", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi2]/settings", "resource_value": {"address_ip": "192.168.16.14", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[Gi3]/settings", "resource_value": {"address_ip": "13.0.2.14", "address_prefix": 24}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet1]/subinterface[0]", "resource_value": {"address_ip": "13.0.1.14", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet2]/subinterface[0]", "resource_value": {"address_ip": "192.168.16.14", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[Ethernet3]/subinterface[0]", "resource_value": {"address_ip": "13.0.2.14", "address_prefix": 24}}}
             ]}
         },
         {
@@ -535,214 +535,214 @@
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/settings", "resource_value": {"endpoints": [{"uuid": "eth1", "type": "copper"}, {"uuid": "int", "type": "copper"}]}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[eth1]/settings", "resource_value": {"address_ip": "192.168.159.1", "address_prefix": 24}}},
-                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/endpoint[int]/settings", "resource_value": {"address_ip": "0.0.0.0", "address_prefix": 0}}}
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[eth1]/subinterface[0]", "resource_value": {"address_ip": "192.168.159.1", "address_prefix": 24}}},
+                {"action": "CONFIGACTION_SET", "custom": {"resource_key": "/interface[int]/subinterface[0]", "resource_value": {"address_ip": "0.0.0.0", "address_prefix": 0}}}
             ]}
         }
     ],
     "links": [
-        {"link_id": {"link_uuid": {"uuid": "CGClient1/eth1==ceos11/Gi1"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient1/eth1==ceos11/Ethernet1"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient1"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi1"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet1"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos1/Gi4==ceos11/Gi2"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos1"}}, "endpoint_uuid": {"uuid": "Gi4" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi2"}}
+        {"link_id": {"link_uuid": {"uuid": "ceos1/Ethernet4==ceos11/Ethernet2"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos1"}}, "endpoint_uuid": {"uuid": "Ethernet4" }},
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet2"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos4/Gi3==ceos11/Gi3"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos4"}}, "endpoint_uuid": {"uuid": "Gi3" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi3"}}
+        {"link_id": {"link_uuid": {"uuid": "ceos4/Ethernet3==ceos11/Ethernet3"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos4"}}, "endpoint_uuid": {"uuid": "Ethernet3" }},
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet3"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient2/eth1==ceos11/Gi4"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient2/eth1==ceos11/Ethernet4"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient2"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi4"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet4"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient3/eth1==ceos11/Gi5"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient3/eth1==ceos11/Ethernet5"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient3"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi5"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet5"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient4/eth1==ceos11/Gi6"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient4/eth1==ceos11/Ethernet6"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient4"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi5"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet5"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient5/eth1==ceos11/Gi7"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient5/eth1==ceos11/Ethernet7"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient5"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi7"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet7"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient6/eth1==ceos11/Gi8"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient6/eth1==ceos11/Ethernet8"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient6"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi8"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet8"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient7/eth1==ceos11/Gi9"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient7/eth1==ceos11/Ethernet9"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient7"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi9"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet9"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient8/eth1==ceos11/Gi10"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient8/eth1==ceos11/Ethernet10"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient8"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi10"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet10"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient9/eth1==ceos11/Gi11"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient9/eth1==ceos11/Ethernet11"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient9"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi11"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet11"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient10/eth1==ceos11/Gi12"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient10/eth1==ceos11/Ethernet12"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient10"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi12"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet12"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient11/eth1==ceos11/Gi13"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient11/eth1==ceos11/Ethernet13"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient11"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi13"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet13"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient12/eth1==ceos11/Gi14"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient12/eth1==ceos11/Ethernet14"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient12"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi14"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet14"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient13/eth1==ceos11/Gi15"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient13/eth1==ceos11/Ethernet15"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient13"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi15"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet15"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient14/eth1==ceos11/Gi16"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient14/eth1==ceos11/Ethernet16"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient14"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi16"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet16"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient15/eth1==ceos11/Gi17"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient15/eth1==ceos11/Ethernet17"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient15"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi17"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet17"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient16/eth1==ceos11/Gi18"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient16/eth1==ceos11/Ethernet18"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient16"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi18"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet18"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient17/eth1==ceos11/Gi19"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient17/eth1==ceos11/Ethernet19"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient17"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi19"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet19"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient18/eth1==ceos11/Gi20"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient18/eth1==ceos11/Ethernet20"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient18"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi20"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet20"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient19/eth1==ceos11/Gi21"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient19/eth1==ceos11/Ethernet21"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient19"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi21"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet21"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient20/eth1==ceos11/Gi22"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient20/eth1==ceos11/Ethernet22"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient20"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi22"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet22"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "CGClient21/eth1==ceos11/Gi23"}}, "link_endpoint_ids": [
+        {"link_id": {"link_uuid": {"uuid": "CGClient21/eth1==ceos11/Ethernet23"}}, "link_endpoint_ids": [
             {"device_id": {"device_uuid": {"uuid": "CGClient21"}}, "endpoint_uuid": {"uuid": "eth1" }},
-            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Gi23"}}
+            {"device_id": {"device_uuid": {"uuid": "ceos11"   }}, "endpoint_uuid": {"uuid": "Ethernet23"}}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos1/Gi5==DDosServer/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos1"     }}, "endpoint_uuid": {"uuid": "Gi5"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos1/Ethernet5==DDosServer/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos1"     }}, "endpoint_uuid": {"uuid": "Ethernet5"}},
             {"device_id": {"device_uuid": {"uuid": "DDosServer"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos1/Gi2==ceos4/Gi2"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos1"     }}, "endpoint_uuid": {"uuid": "Gi2"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos4"}}, "endpoint_uuid": {"uuid": "Gi2" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos1/Ethernet2==ceos4/Ethernet2"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos1"     }}, "endpoint_uuid": {"uuid": "Ethernet2"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos4"}}, "endpoint_uuid": {"uuid": "Ethernet2" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos1/Gi3==ceos2/Gi3"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos1"     }}, "endpoint_uuid": {"uuid": "Gi3"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos2"}}, "endpoint_uuid": {"uuid": "Gi3" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos1/Ethernet3==ceos2/Ethernet3"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos1"     }}, "endpoint_uuid": {"uuid": "Ethernet3"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos2"}}, "endpoint_uuid": {"uuid": "Ethernet3" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos2/Gi1==gateway1/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos2"     }}, "endpoint_uuid": {"uuid": "Gi1"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos2/Ethernet1==gateway1/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos2"     }}, "endpoint_uuid": {"uuid": "Ethernet1"}},
             {"device_id": {"device_uuid": {"uuid": "gateway1"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos2/Gi2==ceos12/Gi2"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos2"     }}, "endpoint_uuid": {"uuid": "Gi5"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos12"}}, "endpoint_uuid": {"uuid": "Gi2" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos2/Ethernet2==ceos12/Ethernet2"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos2"     }}, "endpoint_uuid": {"uuid": "Ethernet5"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos12"}}, "endpoint_uuid": {"uuid": "Ethernet2" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos2/Gi3==ceos1/Gi3"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos2"     }}, "endpoint_uuid": {"uuid": "Gi3"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos1"}}, "endpoint_uuid": {"uuid": "Gi3" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos2/Ethernet3==ceos1/Ethernet3"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos2"     }}, "endpoint_uuid": {"uuid": "Ethernet3"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos1"}}, "endpoint_uuid": {"uuid": "Ethernet3" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos2/Gi4==ceos3/Gi4"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos2"     }}, "endpoint_uuid": {"uuid": "Gi4"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos3"}}, "endpoint_uuid": {"uuid": "Gi4" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos2/Ethernet4==ceos3/Ethernet4"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos2"     }}, "endpoint_uuid": {"uuid": "Ethernet4"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos3"}}, "endpoint_uuid": {"uuid": "Ethernet4" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos2/Gi5==ceos5/Gi3"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos2"     }}, "endpoint_uuid": {"uuid": "Gi5"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos5"}}, "endpoint_uuid": {"uuid": "Gi3" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos2/Ethernet5==ceos5/Ethernet3"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos2"     }}, "endpoint_uuid": {"uuid": "Ethernet5"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos5"}}, "endpoint_uuid": {"uuid": "Ethernet3" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos3/Gi1==CGServer/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos3"     }}, "endpoint_uuid": {"uuid": "Gi5"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos3/Ethernet1==CGServer/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos3"     }}, "endpoint_uuid": {"uuid": "Ethernet5"}},
             {"device_id": {"device_uuid": {"uuid": "CGServer"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos3/Gi2==ceos13/Gi2"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos3"     }}, "endpoint_uuid": {"uuid": "Gi2"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos13"}}, "endpoint_uuid": {"uuid": "Gi2" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos3/Ethernet2==ceos13/Ethernet2"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos3"     }}, "endpoint_uuid": {"uuid": "Ethernet2"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos13"}}, "endpoint_uuid": {"uuid": "Ethernet2" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos3/Gi3==ceos7/Gi4"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos3"     }}, "endpoint_uuid": {"uuid": "Gi5"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos5"}}, "endpoint_uuid": {"uuid": "Gi3" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos3/Ethernet3==ceos7/Ethernet4"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos3"     }}, "endpoint_uuid": {"uuid": "Ethernet5"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos5"}}, "endpoint_uuid": {"uuid": "Ethernet3" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos3/Gi5==ceos12/Gi4"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos3"     }}, "endpoint_uuid": {"uuid": "Gi5"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos12"}}, "endpoint_uuid": {"uuid": "Gi4" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos3/Ethernet5==ceos12/Ethernet4"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos3"     }}, "endpoint_uuid": {"uuid": "Ethernet5"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos12"}}, "endpoint_uuid": {"uuid": "Ethernet4" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos4/Gi4==ceos6/Gi4"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos4"     }}, "endpoint_uuid": {"uuid": "Gi4"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos6"}}, "endpoint_uuid": {"uuid": "Gi4" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos4/Ethernet4==ceos6/Ethernet4"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos4"     }}, "endpoint_uuid": {"uuid": "Ethernet4"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos6"}}, "endpoint_uuid": {"uuid": "Ethernet4" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos5/Gi2==ceos6/Gi3"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos5"     }}, "endpoint_uuid": {"uuid": "Gi2"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos6"}}, "endpoint_uuid": {"uuid": "Gi3" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos5/Ethernet2==ceos6/Ethernet3"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos5"     }}, "endpoint_uuid": {"uuid": "Ethernet2"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos6"}}, "endpoint_uuid": {"uuid": "Ethernet3" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos6/Gi2==ceos7/Gi2"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos6"     }}, "endpoint_uuid": {"uuid": "Gi2"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos7"}}, "endpoint_uuid": {"uuid": "Gi2" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos6/Ethernet2==ceos7/Ethernet2"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos6"     }}, "endpoint_uuid": {"uuid": "Ethernet2"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos7"}}, "endpoint_uuid": {"uuid": "Ethernet2" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos7/Gi3==ceos13/Gi3"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos7"     }}, "endpoint_uuid": {"uuid": "Gi3"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos13"}}, "endpoint_uuid": {"uuid": "Gi3" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos7/Ethernet3==ceos13/Ethernet3"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos7"     }}, "endpoint_uuid": {"uuid": "Ethernet3"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos13"}}, "endpoint_uuid": {"uuid": "Ethernet3" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos13/Gi1==DDosClient1/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Gi1"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos13/Ethernet1==DDosClient1/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Ethernet1"}},
             {"device_id": {"device_uuid": {"uuid": "DDosClient1"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos13/Gi4==DDosClient2/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Gi4"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos13/Ethernet4==DDosClient2/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Ethernet4"}},
             {"device_id": {"device_uuid": {"uuid": "DDosClient2"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos13/Gi5==DDosClient3/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Gi5"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos13/Ethernet5==DDosClient3/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Ethernet5"}},
             {"device_id": {"device_uuid": {"uuid": "DDosClient3"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos13/Gi6==DDosClient4/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Gi6"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos13/Ethernet6==DDosClient4/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Ethernet6"}},
             {"device_id": {"device_uuid": {"uuid": "DDosClient4"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos13/Gi7==DDosClient5/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Gi7"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos13/Ethernet7==DDosClient5/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Ethernet7"}},
             {"device_id": {"device_uuid": {"uuid": "DDosClient5"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos13/Gi8==DDosClient6/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Gi8"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos13/Ethernet8==DDosClient6/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Ethernet8"}},
             {"device_id": {"device_uuid": {"uuid": "DDosClient6"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos13/Gi9==DDosClient7/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Gi9"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos13/Ethernet9==DDosClient7/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Ethernet9"}},
             {"device_id": {"device_uuid": {"uuid": "DDosClient7"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos13/Gi10==DDosClient8/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Gi10"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos13/Ethernet10==DDosClient8/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Ethernet10"}},
             {"device_id": {"device_uuid": {"uuid": "DDosClient8"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos13/Gi11==DDosClient9/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Gi11"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos13/Ethernet11==DDosClient9/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Ethernet11"}},
             {"device_id": {"device_uuid": {"uuid": "DDosClient9"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos13/Gi23==ceos14_ACL/Gi2"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Gi23"}},
-            {"device_id": {"device_uuid": {"uuid": "ceos14_ACL"}}, "endpoint_uuid": {"uuid": "Gi2" }}
+        {"link_id": {"link_uuid": {"uuid": "ceos13/Ethernet23==ceos14_ACL/Ethernet2"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos13"     }}, "endpoint_uuid": {"uuid": "Ethernet23"}},
+            {"device_id": {"device_uuid": {"uuid": "ceos14_ACL"}}, "endpoint_uuid": {"uuid": "Ethernet2" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos14_ACL/Gi1==DDosClient10/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos14_ACL"     }}, "endpoint_uuid": {"uuid": "Gi1"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos14_ACL/Ethernet1==DDosClient10/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos14_ACL"     }}, "endpoint_uuid": {"uuid": "Ethernet1"}},
             {"device_id": {"device_uuid": {"uuid": "DDosClient10"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
-        {"link_id": {"link_uuid": {"uuid": "ceos14_ACL/Gi3==DDosClient11/eth1"}}, "link_endpoint_ids": [
-            {"device_id": {"device_uuid": {"uuid": "ceos14_ACL"     }}, "endpoint_uuid": {"uuid": "Gi3"}},
+        {"link_id": {"link_uuid": {"uuid": "ceos14_ACL/Ethernet3==DDosClient11/eth1"}}, "link_endpoint_ids": [
+            {"device_id": {"device_uuid": {"uuid": "ceos14_ACL"     }}, "endpoint_uuid": {"uuid": "Ethernet3"}},
             {"device_id": {"device_uuid": {"uuid": "DDosClient11"}}, "endpoint_uuid": {"uuid": "eth1" }}
         ]},
         {"link_id": {"link_uuid": {"uuid": "gateway1/eth2==gateway2/eth1"}}, "link_endpoint_ids": [

@@ -61,6 +61,7 @@ class Processor(threading.Thread):
         self.message_queue = message_queue
         self.attack_models = attack_models
         self.topology = topology
+        self.topology_timestamp = None
         self.tfs_api_client = tfs_api_client
         self.terminate = threading.Event()
 
@@ -91,6 +92,16 @@ class Processor(threading.Thread):
 
         attack_ref = attack_sample.get_attack_ref()
         self.attack_models.add_attack_sample(attack_sample)
+
+        now_timestamp = datetime.now(timezone.utc) 
+        if (
+            self.topology_timestamp is None or \
+            (now_timestamp-self.topology_timestamp).total_seconds() > 30
+        ):
+            succeeded = self.topology.refresh()
+            if succeeded:
+                self.topology_timestamp = datetime.now(timezone.utc)
+
         self.attack_models.update_attack_end_devices(attack_ref, self.topology)
         firewall_acl_rule_set, mitigated_sources = self.attack_models.get_mitigation_acls(
             attack_ref, self.topology

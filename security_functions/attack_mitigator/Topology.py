@@ -1,7 +1,7 @@
 import copy, json, logging, networkx, threading
 from ipaddress import IPv4Address, IPv4Interface
 from networkx.algorithms.approximation import steiner_tree
-from typing import Dict, List, Set, Tuple, Union
+from typing import Dict, List, Optional, Set, Tuple, Union
 from .TfsApiClient import TfsApiClient
 
 LOGGER = logging.getLogger(__name__)
@@ -14,12 +14,12 @@ class Topology:
         self._ipif_to_device_endpoint : Dict[IPv4Interface, Tuple[str, str]] = dict()
         self._device_endpoint_to_ipif : Dict[Tuple[str, str], IPv4Interface] = dict()
 
-    def get_device_endpoint_from_ip_addr(self, ip_address : IPv4Address) -> Tuple[str, str]:
+    def get_device_endpoint_from_ip_addr(self, ip_address : IPv4Address) -> Optional[Tuple[str, str]]:
         with self._lock:
             for ipif,device_endpoint_uuid in self._ipif_to_device_endpoint.items():
                 if ipif.ip == ip_address:
                     return device_endpoint_uuid
-            return self._ipif_to_device_endpoint[IPv4Interface('0.0.0.0/0')]
+            return self._ipif_to_device_endpoint.get(IPv4Interface('0.0.0.0/0'))
 
     def get_target_firewalls(
         self, src_device_uuids : Set[str], dst_device_uuids : Set[str], involved_device_uuids : Set[str] = set()
@@ -84,21 +84,44 @@ class Topology:
 
         return target_firewalls
 
-    def load(self) -> None:
+    def refresh(self) -> bool:
         with self._lock:
-            self._load_unsafe()
+            succeeded = self._load_unsafe()
+            return succeeded
 
-    def _load_unsafe(self) -> None:
-        json_topology = self._tfs_api_client.get_topology()
-        if not isinstance(json_topology, dict):
-            raise Exception('Topology is not a dict')
-
+    def _load_unsafe(self) -> bool:
         self._network.clear()
         self._ipif_to_device_endpoint.clear()
         self._device_endpoint_to_ipif.clear()
 
-        devices : List[Dict] = json_topology.get('devices', [])
-        links   : List[Dict] = json_topology.get('links',   [])
+        json_devices = self._tfs_api_client.get_devices()
+        json_links   = self._tfs_api_client.get_links()
+
+        if json_devices is None:
+            LOGGER.warning('Devices is None')
+            return False
+
+        if not isinstance(json_devices, dict):
+            LOGGER.warning('devices is not a Dict')
+            return False
+
+        if json_links is None:
+            LOGGER.warning('Links is None')
+            return False
+
+        if not isinstance(json_links, dict):
+            LOGGER.warning('Links is not a Dict')
+            return False
+
+        devices : List[Dict] = json_devices.get('devices', [])
+        if len(devices) == 0:
+            LOGGER.warning('Devices are empty')
+            return False
+
+        links : List[Dict] = json_links.get('links', [])
+        if len(links) == 0:
+            LOGGER.warning('Links are empty')
+            return False
 
         # Build nodes with their endpoints and record IP/interface mappings.
         for device in devices:
@@ -128,8 +151,8 @@ class Topology:
                         if endpoint_uuid is None: continue
                         endpoints.add(endpoint_uuid)
 
-                elif resource_key.startswith('/endpoint[') and resource_key.endswith(']/settings'):
-                    endpoint_uuid = resource_key[len('/endpoint['):-len(']/settings')]
+                elif resource_key.startswith('/interface[') and resource_key.endswith(']/subinterface[0]'):
+                    endpoint_uuid = resource_key[len('/interface['):-len(']/subinterface[0]')]
                     if len(endpoint_uuid) == 0: continue
                     endpoints.add(endpoint_uuid)
 
@@ -185,3 +208,5 @@ class Topology:
             if self._network.has_edge(device_a, device_b): continue # skip bidirectional links
 
             self._network.add_edge(device_a, device_b, endpoints=link_endpoints)
+
+        return True

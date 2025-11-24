@@ -79,13 +79,19 @@ class AttackModel:
     def update_attack_end_devices(self, topology : Topology) -> None:
         src_ip_addr = self.attack_ref.src_ip_addr
         src_device_endpoint_uuid = topology.get_device_endpoint_from_ip_addr(src_ip_addr)
-        if src_device_endpoint_uuid is not None:
-            self.source_device_uuids.add((src_device_endpoint_uuid[0]))
+        if src_device_endpoint_uuid is None:
+            MSG = '[update_attack_end_devices] Unable to map AttackRef({:s})/src_ip_addr({:s}) to device/endpoint'
+            LOGGER.warning(MSG.format(str(self.attack_ref), str(src_ip_addr)))
+            return
+        self.source_device_uuids.add((src_device_endpoint_uuid[0]))
         
         dst_ip_addr = self.attack_ref.dst_ip_addr
         dst_device_endpoint_uuid = topology.get_device_endpoint_from_ip_addr(dst_ip_addr)
-        if dst_device_endpoint_uuid is not None:
-            self.destination_device_uuids.add((dst_device_endpoint_uuid[0]))
+        if dst_device_endpoint_uuid is None:
+            MSG = '[update_attack_end_devices] Unable to map AttackRef({:s})/dst_ip_addr({:s}) to device/endpoint'
+            LOGGER.warning(MSG.format(str(self.attack_ref), str(dst_ip_addr)))
+            return
+        self.destination_device_uuids.add((dst_device_endpoint_uuid[0]))
 
     def get_target_firewalls(self, topology : Topology) -> Dict[str, Dict]:
         LOGGER.info('[get_target_firewalls] source_device_uuids={:s}'.format(str(self.source_device_uuids)))

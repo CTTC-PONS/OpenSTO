@@ -20,7 +20,6 @@ class Manager:
         )
 
     def start(self) -> None:
-        self.topology.load()
         self.grpc_service.start()
         self.consumer.start()
         self.processor.start()

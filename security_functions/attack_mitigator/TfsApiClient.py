@@ -1,17 +1,16 @@
-import logging, json, requests
+import json, logging, os, requests
 from typing import Any, Dict, Optional
 from .AclComposer import ACLRuleSet, get_ietf_acl
 
-
-TFS_API_ADDRESS  = None #'127.0.0.1'
-TFS_API_PORT     = 80
+TFS_API_ADDRESS  = os.getenv('TFS_API_ADDRESS',     None )   # None means use emulated topology
+TFS_API_PORT     = int(os.getenv('TFS_API_PORT',    '80'))
+TFS_API_TIMEOUT  = int(os.getenv('TFS_API_TIMEOUT', '30'))
 TFS_API_BASE_URL = f'http://{TFS_API_ADDRESS}:{TFS_API_PORT}'
 
-TFS_API_TOPO_URL     = TFS_API_BASE_URL + '/tfs-api/context/admin/topology_details/admin'
+TFS_API_DEVICES_URL  = TFS_API_BASE_URL + '/tfs-api/devices'
+TFS_API_LINKS_URL    = TFS_API_BASE_URL + '/tfs-api/links'
 TFS_API_ACL_ROOT_URL = TFS_API_BASE_URL + '/restconf/data/device={}/ietf-access-control-list:acls'
 TFS_API_ACL_ITEM_URL = TFS_API_BASE_URL + '/restconf/data/device={}/ietf-access-control-list:acl={}'
-
-TFS_API_TIMEOUT  = 30
 
 
 LOGGER = logging.getLogger(__name__)
@@ -21,13 +20,26 @@ class TfsApiClient:
     def __init__(self):
         pass
 
-    def get_topology(self) -> Optional[Dict]:
+    def get_devices(self) -> Optional[Dict]:
         if TFS_API_ADDRESS is None:
-            with open('/app/attack_mitigator/topology.json', 'r', encoding='UTF-8') as fp:
+            with open('/app/attack_mitigator/devices.json', 'r', encoding='UTF-8') as fp:
                 return json.load(fp)
 
         try:
-            response = requests.get(TFS_API_TOPO_URL, timeout=TFS_API_TIMEOUT)
+            response = requests.get(TFS_API_DEVICES_URL, timeout=TFS_API_TIMEOUT)
+            response.raise_for_status()
+            return response.json()
+        except requests.exceptions.RequestException:
+            LOGGER.exception('Unhandled Exception')
+            return None
+
+    def get_links(self) -> Optional[Dict]:
+        if TFS_API_ADDRESS is None:
+            with open('/app/attack_mitigator/links.json', 'r', encoding='UTF-8') as fp:
+                return json.load(fp)
+
+        try:
+            response = requests.get(TFS_API_LINKS_URL, timeout=TFS_API_TIMEOUT)
             response.raise_for_status()
             return response.json()
         except requests.exceptions.RequestException:

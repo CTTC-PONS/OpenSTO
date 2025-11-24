@@ -1,0 +1,2972 @@
+{
+  "links": [
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aa6582ba-47cd-5eea-83fb-f069608b44a1"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "50f8aa40-6caf-52f8-831c-29a6949f6bf5"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "ed003fc9-94b7-54b9-8805-3b840abf3a88"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "01b4f955-695b-5341-90eb-ddc3d61e6a19"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient8/eth1==ceos11/Ethernet10"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0b7de627-6372-5b76-bdfc-568d7512d32d"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "7f13ee7c-0b0a-5a52-a054-699e6ff4042f"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "5e5dbb2d-637f-5c5d-9290-6e7985ee4df1"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "8428341c-cdf5-59fb-a12e-658c7cd02001"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "0438c5c9-cba3-5d02-a6ac-fc58e13f37fd"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos3/Ethernet1==CGServer/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "d4242bf1-58c1-5a76-8b15-2e878ec374d2"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "41bc66f5-2f6c-54ee-98d2-97326ec1d9df"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "351850a5-d896-5427-985a-32c6a5988a5a"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "05662368-aed5-52e8-a9f2-a6bb0143e772"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient10/eth1==ceos11/Ethernet12"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "01fcd6ef-44d8-595a-9d25-883412725f1a"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "05e5648b-31ef-5c35-9a15-dc89b38a6696"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "daa11a46-74e0-5d16-b65b-6268a608ab98"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "1523bed8-668c-5034-b287-efac9602b924"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient5/eth1==ceos11/Ethernet7"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "e464125d-5c7e-5303-8ac2-33dbfa6dd64c"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "8779c335-9cec-5e75-b208-6eb5cda40a70"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "17a7233c-f7eb-57b2-9e25-61db5c74c809"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "c7422dca-8ee7-5445-8a18-e6ff00d6fae9"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "1d2c5ef6-d120-5f1a-b787-089d24502773"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "gateway1/eth2==gateway2/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aaeee8c3-ed07-524c-9547-9ce78d3b8845"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "a4a64af5-cc59-58c2-b836-7296744bde84"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "7dca0748-b5af-5316-b2dd-dc637b30aac1"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "1afab939-c6a1-539c-9eed-791fbf282dbb"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "20f4b78f-7274-5ae1-acca-38bd468a146b"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos13/Ethernet9==DDosClient7/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0b7de627-6372-5b76-bdfc-568d7512d32d"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "7f13ee7c-0b0a-5a52-a054-699e6ff4042f"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0fc26b6b-ad38-5fd4-a541-2607ee942d1c"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "8cf4b330-7c41-5bec-b06d-958f93b236d6"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "251ba0f0-46a5-598f-8717-ac03654e87cf"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos3/Ethernet3==ceos7/Ethernet4"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aaeee8c3-ed07-524c-9547-9ce78d3b8845"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "deb0884c-993c-5f31-9af8-a55b2adb8da0"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "20b7e682-bd8a-5926-98c2-948fc8fa38b9"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "c0c5c7d0-1e68-5836-8359-a55fe4f27b04"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "2a812d86-0e0e-59b7-8494-931e00437093"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos13/Ethernet5==DDosClient3/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "a61a5c22-f5df-5110-828f-f1e599ef9c2e"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "968617bd-6912-56d9-ad3e-5799dfa992d1"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "23f6e1ac-ae49-54a3-ad5b-5fc5505b90b4"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "35748000-b1aa-5c6d-96de-60f3990af43d"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient21/eth1==ceos11/Ethernet23"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aaeee8c3-ed07-524c-9547-9ce78d3b8845"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "fe28e9f0-fd47-5f3f-b8ca-2fc830e6261c"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "014877e5-e945-5d1c-bbb7-aabf1c09cb79"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "a8fc2fb8-2f25-501b-b5f2-4fd8d15d1c5c"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "35ed926c-e010-5c0a-948b-5c8a6f0fae26"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos13/Ethernet23==ceos14_ACL/Ethernet2"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "19dae133-be6b-52f4-99cd-b451191cc551"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "05450fb2-495f-58c2-a207-ce1a2cdd7ca0"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "f248769c-ef08-5857-9d17-85dad1c3362a"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "3774829f-3454-58c0-a7bb-75509338730f"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient1/eth1==ceos11/Ethernet1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "fc85409d-02c2-53a0-8196-5046d367315b"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "71704111-83b3-5932-ae0b-5e120408f52e"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "2cdbd4ca-c463-5d71-9bb8-10ea149d273f"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "3abbdcb8-93e5-5001-aac3-617285dc2da3"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient11/eth1==ceos11/Ethernet13"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aaeee8c3-ed07-524c-9547-9ce78d3b8845"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "4502cff6-fe9e-596e-930b-95a5ce12b6cd"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "81efe264-5843-54db-acb8-0d3e1b147f6e"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "dcad6886-6796-509e-9c6f-d1ad1ff7f923"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "402727b8-3d0e-5d9c-aab2-8f947fb4bcda"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos13/Ethernet10==DDosClient8/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aaeee8c3-ed07-524c-9547-9ce78d3b8845"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "1ef5756f-cf10-5b2f-8f4e-d8821c3b423f"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "2ed4954f-0b87-5f72-8a19-0a22c29a62c9"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "e1bbabba-945e-5e8a-9a13-2f6bd0a41aa2"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "4603f149-4d35-5cab-ac9a-3237f134e5c5"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos13/Ethernet11==DDosClient9/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0b7de627-6372-5b76-bdfc-568d7512d32d"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "7f13ee7c-0b0a-5a52-a054-699e6ff4042f"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "b5a05603-570a-5f87-844a-66519321cdf2"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "6bf84df0-10f9-5978-94a0-6a3e777d4c16"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "46867da4-47aa-587f-9c27-90bc0733547e"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos3/Ethernet5==ceos12/Ethernet4"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "04033c5d-d7e0-5f8d-890b-f3e7735f0a97"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "2f0dfc31-f29a-5693-ab61-7c8c419c1a1f"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "1f92cef4-ef7f-5ed2-8992-5456f2998980"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "47703550-dd5e-509d-b54f-134cb1cbc2e5"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient14/eth1==ceos11/Ethernet16"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "6b9d1b6d-6664-5a90-b365-2db57df3f1a8"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "0ec793f4-06c9-51b5-bae1-73d3a8bebc01"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0b7de627-6372-5b76-bdfc-568d7512d32d"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "02757557-67e9-57ed-9636-38ae34535a52"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "4c1dd7e1-ce8c-5d24-9471-51ec35f811b3"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos2/Ethernet4==ceos3/Ethernet4"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0fc26b6b-ad38-5fd4-a541-2607ee942d1c"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "e55ee637-372f-5d11-86a5-a55250233c54"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "5d4f74f9-570e-5329-b517-fb18114df94b"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "74041bbe-96b1-5db4-b332-05f4469f79a1"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "4c7317d2-5f5b-5f66-95e9-7d0e34c7a7c8"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos5/Ethernet2==ceos6/Ethernet3"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "014877e5-e945-5d1c-bbb7-aabf1c09cb79"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "2d9f679f-eb2c-5078-97a7-5d25eadfd418"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "819d1db9-316c-5272-a3a1-02eaf0502920"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "deb64451-4493-5729-8be5-1f7bdcb10dd7"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "4f0bbf49-fe6e-55b3-85e0-e58fe618fb32"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos14_ACL/Ethernet1==DDosClient10/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "4c9685e0-38f8-5f8a-9b5c-75c7c3310621"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "32bfefcd-e6b9-5bff-84a6-dc29b3480fb0"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "db9a864d-cae0-5b02-877b-93afca87b350"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "4f5cad7f-2340-532e-8d04-a1ec5dbee198"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient17/eth1==ceos11/Ethernet19"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0b05be42-4055-5d10-8abb-5f00bee46278"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "94934633-f4db-551d-b6e8-a95e3fd34273"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "5d4f74f9-570e-5329-b517-fb18114df94b"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "3ce25b0d-7325-5184-98c8-2e2fe908c6f9"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "53915cbd-d0f6-5f9d-a9d8-660ce26b57a8"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos4/Ethernet4==ceos6/Ethernet4"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "4b096cd5-7654-52ff-b32d-c37800289608"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "d89237fe-8ee2-5b1e-a02d-e6cc98ec4db4"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0b05be42-4055-5d10-8abb-5f00bee46278"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "2038c286-db77-54f9-baa5-b037333f07f5"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "5571aeb6-b355-53fd-9a6e-7934170a3e68"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos1/Ethernet2==ceos4/Ethernet2"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aaeee8c3-ed07-524c-9547-9ce78d3b8845"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "b64a079e-39ef-582d-81ae-2fe1d571fc58"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "2e595436-1b91-55bf-83d4-5f641ec431fc"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "2ea7e159-5e94-5b43-8514-039f70282755"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "586b92f9-aad5-50c3-9185-4b1cc8b943fe"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos13/Ethernet7==DDosClient5/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "6a47bd7e-1514-54a0-9c2c-4ecfa2205e0a"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "c8eb2393-ad28-5d91-b02b-9ff0f3d2ef89"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "6126ef23-e4b8-5c1c-9128-3279fd5c0a42"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "5a1fccbe-47c8-5b26-9f34-0fcdb6f93c85"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient19/eth1==ceos11/Ethernet21"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "b53505e1-e6c6-58dd-8149-c349e883e774"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "2eaf816c-bc6e-596b-b0a4-aed7804c645e"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "5cec2306-6353-543c-9c24-a6a98c539f06"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "5b664f6b-a620-5c5a-9a05-1d043aca2e15"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient2/eth1==ceos11/Ethernet4"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aaeee8c3-ed07-524c-9547-9ce78d3b8845"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "c2a32cdc-841e-5803-bea4-5efd1221e749"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "614b3b37-3258-5cd7-8fd3-695b7b9100db"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "deb62635-1634-58c3-979b-65d0d779619c"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "5ff822b5-9dec-5c2a-a3cf-260697723812"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos13/Ethernet8==DDosClient6/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "6b9d1b6d-6664-5a90-b365-2db57df3f1a8"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "30ef3a9a-2502-5e29-84ac-0e703c89b7d8"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "4b096cd5-7654-52ff-b32d-c37800289608"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "441614d6-43bb-5fb8-baad-6fec7b515d73"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "61b07d00-48fb-5fc5-bc21-9bec34a0f3c5"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos2/Ethernet3==ceos1/Ethernet3"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aa51e046-85db-5e4f-a4a9-518ed22db62f"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "095b6aac-a572-5f7f-93d7-83226e662c85"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "4f1e03ff-a5bd-5ba3-8267-61d7844eaeca"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "65dc70be-a4e4-5c80-99e4-c801eae6096d"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient9/eth1==ceos11/Ethernet11"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aaeee8c3-ed07-524c-9547-9ce78d3b8845"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "b19dde9d-8afa-5e2a-a9d8-a4afcfb41097"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "503f79bd-765d-548a-b146-c963e28f870d"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "1b91c4ae-095f-5291-9ecb-8d7863be15f6"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "74467fb5-0b84-5fbb-b09a-d34cdec3b8c1"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos13/Ethernet6==DDosClient4/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "d03e181d-bd6e-59cf-abb2-7f60f2bd9484"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "30e29987-f130-53c8-bdf4-d90c21a20f9e"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "9a192a0d-21fa-5852-96e6-24c7f0111d8d"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "76a54b96-eaa6-5ccc-af62-3b1e0b72738a"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient6/eth1==ceos11/Ethernet8"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "a2209207-5424-5e4b-817d-9318e2cb5468"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "2c0fe9e1-66c5-5f3f-b0d0-a43b30603074"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "17a7233c-f7eb-57b2-9e25-61db5c74c809"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "d05c162e-651a-5c0d-97c3-b4803f94b784"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "7837342b-ff54-501e-af1c-e3aa43457a4a"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "Internet/eth1==gateway2/eth2"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833c753d-2816-5311-9ad6-a8df367af0a2"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "0504b88e-ce5c-51cc-ba9f-c1fe89f6e7dd"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "1836de88-412d-5957-8741-6436825976fb"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "79e68184-7beb-5d17-ab43-8b816ad2dd2f"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient3/eth1==ceos11/Ethernet5"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "4b096cd5-7654-52ff-b32d-c37800289608"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "f0b737b6-a606-545d-abb2-968acc65b28e"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "556fdf68-d737-5bc7-939d-7f852742f51e"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "7a47242d-f406-536f-9a84-a551b55b2615"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos1/Ethernet4==ceos11/Ethernet2"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "88d35594-161f-5d25-874d-26888de53d4c"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "c9ad52de-1013-5904-8ba9-45779d3fc406"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "6eb97ecc-c47b-5527-9cef-c238fbae8582"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "7b67acd9-b315-5918-8512-214e2630b11c"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient12/eth1==ceos11/Ethernet14"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "6b9d1b6d-6664-5a90-b365-2db57df3f1a8"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "0e45bbad-5707-5d0c-8c39-ccfa73268707"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "e464125d-5c7e-5303-8ac2-33dbfa6dd64c"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "857f2d15-c631-562e-b82f-4fb98b79572b"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "7d360800-241c-5b00-bae7-a8320082d3b2"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos2/Ethernet1==gateway1/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "b8706adc-88fe-5de6-8270-10f694ed61c2"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "5e1f04f0-3a0b-5ce7-b52a-e3eea915ef48"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "1836de88-412d-5957-8741-6436825976fb"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "82cccfae-c15a-55ea-a1be-129f9b6b61f5"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient4/eth1==ceos11/Ethernet6"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "6b9d1b6d-6664-5a90-b365-2db57df3f1a8"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "a6f7ebfd-bfb0-5049-9c79-cd9e2584c436"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0fc26b6b-ad38-5fd4-a541-2607ee942d1c"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "8cf4b330-7c41-5bec-b06d-958f93b236d6"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "843cb495-0518-570d-ab14-2c8f5fb49f05"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos2/Ethernet5==ceos5/Ethernet3"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "014877e5-e945-5d1c-bbb7-aabf1c09cb79"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "de5826d9-484a-5e01-986b-b6ba26434445"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0a960fd0-66ea-5936-b1a3-e902dd93a7a2"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "c7823ef5-7eb0-57df-8828-3233c1960d4e"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "895711cc-6b73-5200-b4f8-29d0a0cf6b91"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos14_ACL/Ethernet3==DDosClient11/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "5d4f74f9-570e-5329-b517-fb18114df94b"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "861679c0-8a51-59e6-b3d6-5d31fd797433"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "588f563f-b427-5d1a-9551-c2138c928d1f"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "84e9745b-f2ab-5742-b53b-009d7fdb53ee"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "89ebe21c-4b03-5593-a96e-3df054c44935"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos6/Ethernet2==ceos7/Ethernet2"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "d17d4255-956c-5fe0-802f-8ecfca349302"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "52cbeebf-84ae-551c-8654-167a8614b695"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "b68604ab-28ef-5b27-8317-3479779aedc8"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "8cdfde4d-f5af-5356-8f89-829d1b249449"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient7/eth1==ceos11/Ethernet9"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "4b096cd5-7654-52ff-b32d-c37800289608"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "bcc0c131-51f5-511c-8c08-254a00a0f156"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0b09088c-a9eb-5513-b0ac-3f752510f8de"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "e6b3d4a5-4090-5984-8791-952b40284d08"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "90e9d510-4f65-53c1-a656-6444e5ac6f78"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos1/Ethernet5==DDosServer/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aaeee8c3-ed07-524c-9547-9ce78d3b8845"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "826b8b3b-1929-546f-9c86-e9d2f949b71b"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "49d5952e-2dc1-511c-8344-16ae9ce8eb2c"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "90b2a505-75f8-5640-833a-76aa0e4a79e1"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "bca3ee45-3aa1-5963-b595-c83d9e8ceef3"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos13/Ethernet4==DDosClient2/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aaeee8c3-ed07-524c-9547-9ce78d3b8845"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "de03bdaa-1c88-5539-ad07-fad93b7561bd"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "48c605f5-1c31-5fd2-9488-653d502db5e2"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "3d1a0842-43c8-5957-b9b4-63dab71e6646"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "c3f003f4-4ae7-5a21-aa8c-5ed106a9f0d6"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos13/Ethernet1==DDosClient1/eth1"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0b05be42-4055-5d10-8abb-5f00bee46278"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "b1e8e523-da30-539d-9ab8-cadd73b47c85"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "14d7d607-a772-55b0-9267-2b472ecece15"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "c6daed4e-9671-5571-929d-cb38175b627e"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos4/Ethernet3==ceos11/Ethernet3"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "79e01fbe-41c8-55b9-b242-6c5aa79de131"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "c3416606-c414-5a68-aa96-af62cb38f777"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "b2d92da9-ab70-5c03-886c-4eaac7e51f2f"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "c72a341f-cd60-599f-a548-56fa7fa2b82b"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient13/eth1==ceos11/Ethernet15"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "4b096cd5-7654-52ff-b32d-c37800289608"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "441614d6-43bb-5fb8-baad-6fec7b515d73"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "6b9d1b6d-6664-5a90-b365-2db57df3f1a8"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "30ef3a9a-2502-5e29-84ac-0e703c89b7d8"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "cc080894-c759-5bbb-9332-f44821461dff"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos1/Ethernet3==ceos2/Ethernet3"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "588f563f-b427-5d1a-9551-c2138c928d1f"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "f4ef4775-c95f-57e6-bb07-ff63639a0dad"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aaeee8c3-ed07-524c-9547-9ce78d3b8845"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "868e3b69-f45b-5c96-88b7-a8ca885b8d78"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "cd032b93-deef-545b-8bef-027b14abf1f7"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos7/Ethernet3==ceos13/Ethernet3"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0da641a1-7cff-53d5-9ed1-e712de884901"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "aefd7559-bdea-51fd-96ff-94d2ea9b5cd2"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "fc0dd545-ee74-5c77-b4b8-88bdddd5f727"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "e864366c-0694-5301-aeb2-2d133e25ad61"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient16/eth1==ceos11/Ethernet18"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "6b9d1b6d-6664-5a90-b365-2db57df3f1a8"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "a6f7ebfd-bfb0-5049-9c79-cd9e2584c436"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "b5a05603-570a-5f87-844a-66519321cdf2"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "30b50a1e-1fad-512b-8e72-62bd7431c899"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "e9680349-4a3f-5773-b9c2-b1c4a85c9595"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos2/Ethernet2==ceos12/Ethernet2"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "ec51f7e8-2675-5a3e-a3ab-4c3ee0f7fe07"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "4b130a22-007b-5ee0-9f34-8f85ead8b5fb"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "1418c4d9-0197-5b97-957e-a6f0ee159ac4"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "f19b2d10-826a-587a-926b-f0cfba8faad0"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient15/eth1==ceos11/Ethernet17"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "0b7de627-6372-5b76-bdfc-568d7512d32d"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "b36493a4-de02-5a2c-b031-efa472dcecb3"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "aaeee8c3-ed07-524c-9547-9ce78d3b8845"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "e94e8e78-c6a3-5ca9-8ec4-bebde0e43f65"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "f1b386ea-193b-5274-9c71-34384fdb3098"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "ceos3/Ethernet2==ceos13/Ethernet2"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "94c0d81a-bd55-54dc-b154-c01f2759327c"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "e2a94e0f-b34e-55a8-a809-9837df7c2f3e"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "d848c43a-5ce2-50ef-9cf8-0ea373073142"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "f1e5cc5d-8548-54a9-b4b0-768b5b91c6be"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient20/eth1==ceos11/Ethernet22"
+    },
+    {
+      "attributes": {
+        "is_bidirectional": false,
+        "total_capacity_gbps": 0,
+        "used_capacity_gbps": 0
+      },
+      "link_endpoint_ids": [
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "63fc49ac-e491-5485-b802-b7c6ff9afdcb"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "fb33d783-bb2c-5c1f-8cf5-883d31ffa981"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        },
+        {
+          "device_id": {
+            "device_uuid": {
+              "uuid": "833838b1-5524-53bf-bdc4-1b8e6759cf06"
+            }
+          },
+          "endpoint_uuid": {
+            "uuid": "84785c4d-bdae-5f06-9e1f-9d348e15ef85"
+          },
+          "topology_id": {
+            "context_id": {
+              "context_uuid": {
+                "uuid": "43813baf-195e-5da6-af20-b3d0922e71a7"
+              }
+            },
+            "topology_uuid": {
+              "uuid": "c76135e3-24a8-5e92-9bed-c3c9139359c8"
+            }
+          }
+        }
+      ],
+      "link_id": {
+        "link_uuid": {
+          "uuid": "f9b04e25-98c9-5d90-9827-5db5456e4d2f"
+        }
+      },
+      "link_type": "LINKTYPE_UNKNOWN",
+      "name": "CGClient18/eth1==ceos11/Ethernet20"
+    }
+  ]
+}

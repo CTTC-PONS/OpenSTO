@@ -50,9 +50,9 @@ topology:
       kind: linux
       image: bitnamilegacy/kafka:latest
       mgmt-ipv4: 172.20.20.150
-      ports:
-        - "9092:9092/tcp"
-        - "9093:9093/tcp"
+      #ports:
+      #  - "9092:9092/tcp"
+      #  - "9093:9093/tcp"
       env:
         KAFKA_BROKER_ID: "1"
         KAFKA_CFG_PROCESS_ROLES: "broker,controller"
@@ -139,9 +139,12 @@ topology:
       image: attack-mitigator:dev
       mgmt-ipv4: 172.20.20.155
       env:
-        KAFKA_SERVER   : "172.20.20.150:9092"
-        CONSUMER_TOPIC : "attacks_detected"
-        PUBISHER_TOPIC : "acls"
+        KAFKA_SERVER    : "172.20.20.150:9092"
+        CONSUMER_TOPIC  : "attacks_detected"
+        PUBISHER_TOPIC  : "acls"
+        TFS_API_ADDRESS : "10.0.2.10"
+        TFS_API_PORT    : "80"
+        TFS_API_TIMEOUT : "30"
       stages:
         create:
           wait-for:

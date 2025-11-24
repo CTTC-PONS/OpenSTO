@@ -96,6 +96,8 @@ topology:
         MONITORED_DEVICE       : "ceos14_ACL"
         SNIFFER_INTERFACE      : "eth1"
         SNIFFER_CAPTURE_FILTER : ""
+        FLOW_IDLE_TIMEOUT      : "10"
+        FLOW_ACTIVE_TIMEOUT    : "10"
         KAFKA_SERVER           : "172.20.20.150:9092"
         PUBISHER_TOPIC         : "traffic_flows"
       stages:

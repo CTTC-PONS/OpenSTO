@@ -9,6 +9,7 @@ SNIFFER_INTERFACE      = str(os.getenv('SNIFFER_INTERFACE',      'eth1'  ))
 SNIFFER_CAPTURE_FILTER = str(os.getenv('SNIFFER_CAPTURE_FILTER', ''      ))
 SNIFFER_PROMISCUOUS    = str(os.getenv('SNIFFER_PROMISCUOUS',    'true'  )).upper() == 'TRUE'
 FLOW_IDLE_TIMEOUT      = int(os.getenv('FLOW_IDLE_TIMEOUT',      '30'    ))
+FLOW_ACTIVE_TIMEOUT    = int(os.getenv('FLOW_ACTIVE_TIMEOUT',    '30'    ))
 
 class Sniffer(threading.Thread):
     def __init__(self, message_queue : queue.Queue) -> None:
@@ -25,7 +26,8 @@ class Sniffer(threading.Thread):
             LOGGER.info(MSG.format(str(SNIFFER_INTERFACE), str(SNIFFER_CAPTURE_FILTER)))
             streamer = NFStreamer(
                 source=SNIFFER_INTERFACE, bpf_filter=SNIFFER_CAPTURE_FILTER,
-                idle_timeout=FLOW_IDLE_TIMEOUT, promiscuous_mode=SNIFFER_PROMISCUOUS
+                idle_timeout=FLOW_IDLE_TIMEOUT, active_timeout=FLOW_ACTIVE_TIMEOUT,
+                promiscuous_mode=SNIFFER_PROMISCUOUS
             )
 
             flows = iter(streamer)

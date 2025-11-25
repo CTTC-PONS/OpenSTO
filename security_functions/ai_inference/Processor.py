@@ -1,6 +1,5 @@
-import logging, os, queue, threading, time
+import logging, numpy, os, pickle, queue, threading, time
 from kafka import KafkaProducer
-from numpy import array
 from typing import Dict
 
 LOGGER = logging.getLogger(__name__)
@@ -14,8 +13,8 @@ def init_kafka_producer(retries: int = 30, delay: float = 3) -> KafkaProducer:
         print(MSG.format(attempt, retries), flush=True)
         try:
             return KafkaProducer(
-                bootstrap_servers = KAFKA_SERVER, 
-                value_serializer = lambda o: str(o).encode('utf-8'),
+                bootstrap_servers=KAFKA_SERVER, 
+                value_serializer=pickle.dumps,
             )
         except Exception as exc:
             MSG = '[init_kafka_producer] Failed to connect to Kafka: {:s}'
@@ -70,14 +69,10 @@ class Processor(threading.Thread):
             prob_normal_traffic      = float(1.0)
             prob_benign_heavy_hitter = float(0.0)
             prob_malign_heavy_hitter = float(0.0)
-        elif src_ip == '13.0.1.1':
+        elif src_ip in {'13.0.1.1', '13.0.2.1'}:
             prob_normal_traffic      = float(0.2)
             prob_benign_heavy_hitter = float(0.2)
             prob_malign_heavy_hitter = float(0.6)
-        elif src_ip == '13.0.2.1':
-            prob_normal_traffic      = float(0.1)
-            prob_benign_heavy_hitter = float(0.8)
-            prob_malign_heavy_hitter = float(0.1)
         else:
             prob_normal_traffic      = float(0.0)
             prob_benign_heavy_hitter = float(0.0)
@@ -95,7 +90,7 @@ class Processor(threading.Thread):
             'flow_pkts'        : flow_bytes,
         }
         inference_probs = {
-            'data': array([[
+            'data': numpy.array([[
                 float(prob_normal_traffic),
                 float(prob_benign_heavy_hitter),
                 float(prob_malign_heavy_hitter),

@@ -13,7 +13,7 @@ class Manager:
         self.processor     = Processor(self.message_queue, self.attack_store)
 
         # Manual settings for debugging
-        self.attack_store.set(AttackSpecs('normal_traffic', 0.8, 0.3).to_proto())
+        self.attack_store.set(AttackSpecs('normal_traffic',      0.8, 0.3).to_proto())
         self.attack_store.set(AttackSpecs('benign_heavy_hitter', 0.8, 0.3).to_proto())
         self.attack_store.set(AttackSpecs('malign_heavy_hitter', 0.8, 0.3).to_proto())
 

@@ -2,10 +2,12 @@ import json, logging, os, requests
 from typing import Any, Dict, Optional
 from .AclComposer import ACLRuleSet, get_ietf_acl
 
-TFS_API_ADDRESS  = os.getenv('TFS_API_ADDRESS',     None )   # None means use emulated topology
-TFS_API_PORT     = int(os.getenv('TFS_API_PORT',    '80'))
-TFS_API_TIMEOUT  = int(os.getenv('TFS_API_TIMEOUT', '30'))
-TFS_API_BASE_URL = f'http://{TFS_API_ADDRESS}:{TFS_API_PORT}'
+TFS_API_ADDRESS  = os.getenv('TFS_API_ADDRESS',      None    )   # None means use emulated topology
+TFS_API_PORT     = int(os.getenv('TFS_API_PORT',     '80'   ))
+TFS_API_TIMEOUT  = int(os.getenv('TFS_API_TIMEOUT',  '30'   ))
+TFS_API_USERNAME = str(os.getenv('TFS_API_USERNAME', 'admin'))
+TFS_API_PASSWORD = str(os.getenv('TFS_API_PASSWORD', 'admin'))
+TFS_API_BASE_URL = f'http://{TFS_API_USERNAME}:{TFS_API_PASSWORD}@{TFS_API_ADDRESS}:{TFS_API_PORT}'
 
 TFS_API_DEVICES_URL  = TFS_API_BASE_URL + '/tfs-api/devices'
 TFS_API_LINKS_URL    = TFS_API_BASE_URL + '/tfs-api/links'

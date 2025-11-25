@@ -1,4 +1,4 @@
-import logging, os, queue, threading, time, uuid
+import logging, os, pickle, queue, threading, time, uuid
 from kafka import KafkaConsumer
 
 LOGGER = logging.getLogger(__name__)
@@ -14,7 +14,7 @@ def init_kafka_consumer(retries: int = 30, delay: float = 3) -> KafkaConsumer:
         try:
             return KafkaConsumer(
                 CONSUMER_TOPIC, bootstrap_servers=KAFKA_SERVER, group_id=CONSUMER_GROUP_ID,
-                value_deserializer = lambda x: x.decode('utf-8'),
+                value_deserializer = pickle.loads,
                 auto_offset_reset='earliest', enable_auto_commit=True,
             )
         except Exception:
@@ -35,7 +35,7 @@ class Consumer(threading.Thread):
         try:
             consumer = init_kafka_consumer()
             for msg in consumer:
-                #LOGGER.debug('Received: {:s}'.format(str(msg.value)))
+                LOGGER.debug('Received: {:s}'.format(str(msg.value)))
                 self.message_queue.put(msg.value)
         except Exception:
             LOGGER.exception('Unhandled Exception')

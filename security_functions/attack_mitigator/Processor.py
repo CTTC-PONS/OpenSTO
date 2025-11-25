@@ -1,8 +1,9 @@
-import json, logging, os, queue, threading, time, uuid
+import logging, os, pickle, queue, threading, time, uuid
 from datetime import datetime, timezone
 from enum import Enum
+from ipaddress import IPv4Address
 from kafka import KafkaProducer
-from typing import Dict, List, Optional, Tuple
+from typing import List, Optional, Tuple
 from .AttackModels import AttackModels, AttackSample, FlowRef
 from .TfsApiClient import TfsApiClient
 from .Topology import Topology
@@ -13,14 +14,18 @@ KAFKA_SERVER   = os.getenv('KAFKA_SERVER',   'localhost:9092'  )
 PUBISHER_TOPIC = os.getenv('PUBISHER_TOPIC', 'attacks_detected')
 ACLS_TOPIC     = os.getenv('ACLS_TOPIC',     'acls'            )
 
+ADDRESSES_OF_INTEREST = {
+    IPv4Address('13.0.1.1'), IPv4Address('13.0.2.1'), 
+}
+
 def init_kafka_producer(retries: int = 30, delay: float = 3) -> KafkaProducer:
     for attempt in range(1, retries + 1):
         MSG = '[init_kafka_producer] Try #{:d}/{:d}: Connecting to Kafka...'
         print(MSG.format(attempt, retries), flush=True)
         try:
             return KafkaProducer(
-                bootstrap_servers = KAFKA_SERVER, 
-                value_serializer = lambda o: json.dumps(o).encode('utf-8'),
+                bootstrap_servers=KAFKA_SERVER, 
+                value_serializer=pickle.dumps,
             )
         except Exception as exc:
             MSG = '[init_kafka_producer] Failed to connect to Kafka: {:s}'
@@ -74,22 +79,21 @@ class Processor(threading.Thread):
 
             while not self.terminate.is_set():
                 try:
-                    str_attack_sample = self.message_queue.get(block=True, timeout=1.0)
+                    attack_sample = self.message_queue.get(block=True, timeout=1.0)
                 except queue.Empty:
                     continue
 
-                LOGGER.info('Processing: {:s}'.format(str(str_attack_sample)))
-                self.dispatch_attack(str_attack_sample, producer)
+                attack_sample = AttackSample.from_dict(attack_sample)
+                if attack_sample.attack_uuid in {'normal_traffic', 'benign_heavy_hitter'}: continue
+                if attack_sample.src_ip_addr not in ADDRESSES_OF_INTEREST: continue
+
+                LOGGER.info('Processing: {:s}'.format(str(attack_sample)))
+                self.dispatch_attack(attack_sample, producer)
 
         except Exception:
             LOGGER.exception('Unhandled Exception')
 
-    def dispatch_attack(self, str_attack_sample : str, producer : KafkaProducer) -> None:
-        json_attack_sample : Dict = json.loads(str_attack_sample)
-        LOGGER.info('Attack Sample: {:s}'.format(str(json_attack_sample)))
-        attack_sample = AttackSample.from_dict(json_attack_sample)
-        if attack_sample.attack_uuid in {'normal_traffic', 'benign_heavy_hitter'}: return
-
+    def dispatch_attack(self, attack_sample : AttackSample, producer : KafkaProducer) -> None:
         attack_ref = attack_sample.get_attack_ref()
         self.attack_models.add_attack_sample(attack_sample)
 

@@ -109,10 +109,16 @@ class AttackModel:
         acl_ruleset_uuid = str(uuid.uuid4())
         acl_ruleset_name = 'opensto-{:s}-{:s}'.format(self.attack_ref.attack_uuid, acl_ruleset_uuid)
 
+        mitigated_device_uuids = {
+            topology.get_device_uuid(d_id)
+            for d_id in self.mitigated_device_uuids
+        }
+
         firewall_acl_rule_set : Dict[str, ACLRuleSet] = dict()
         mitigated_sources : Set[str] = set()
         for src_device_uuid in self.source_device_uuids:
-            if src_device_uuid in self.mitigated_device_uuids: continue
+            src_device_uuid = topology.get_device_uuid(src_device_uuid)
+            if src_device_uuid in mitigated_device_uuids: continue
 
             target_firewall = target_firewalls[src_device_uuid]
 
@@ -143,11 +149,12 @@ class AttackModel:
                 )
             acl_rule_set = firewall_acl_rule_set[firewall_device_uuid]
 
+            firewall_endpoint_name = topology.get_endpoint_name(firewall_device_uuid, firewall_endpoint_uuid)
             acl_entry_name = 'opensto-{:s}-{:s}-{:s}'.format(
                 src_device_uuid, firewall_endpoint_uuid, acl_ruleset_uuid
             )
             acl_entry = ACLEntry(name=acl_entry_name)
-            acl_entry.ingress_interface        = firewall_endpoint_uuid
+            acl_entry.ingress_interface        = firewall_endpoint_name
             acl_entry.match_ipv4.src_ip_prefix = '{:s}/32'.format(str(self.attack_ref.src_ip_addr))
             acl_entry.match_ipv4.dst_ip_prefix = '{:s}/32'.format(str(self.attack_ref.dst_ip_addr))
 

@@ -1,4 +1,4 @@
-import json, logging, os, queue, threading, time
+import logging, os, pickle, queue, threading, time
 from datetime import datetime
 from kafka import KafkaProducer
 from nfstream.flow import NFlow
@@ -16,8 +16,8 @@ def init_kafka_producer(retries: int = 30, delay: float = 3) -> KafkaProducer:
         print(MSG.format(attempt, retries), flush=True)
         try:
             return KafkaProducer(
-                bootstrap_servers = KAFKA_SERVER, 
-                value_serializer = lambda o: json.dumps(o).encode('utf-8'),
+                bootstrap_servers=KAFKA_SERVER, 
+                value_serializer=pickle.dumps,
             )
         except Exception as exc:
             MSG = '[init_kafka_producer] Failed to connect to Kafka: {:s}'

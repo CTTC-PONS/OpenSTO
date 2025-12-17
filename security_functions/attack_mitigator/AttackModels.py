@@ -24,6 +24,15 @@ class AttackRef:
     dst_port    : int
     protocol    : int
 
+    def get_plain_flow_id(self) -> str:
+        return '--'.join([
+            str(self.src_ip_addr).replace('.', '_'),
+            str(self.src_port),
+            str(self.dst_ip_addr).replace('.', '_'),
+            str(self.dst_port),
+            str(self.protocol),
+        ])
+
 @dataclass
 class AttackSample:
     attack_uuid : str
@@ -106,9 +115,6 @@ class AttackModel:
     def get_mitigation_acls(self, topology : Topology) -> Tuple[Dict[str, ACLRuleSet], Set[str]]:
         target_firewalls = self.get_target_firewalls(topology)
 
-        acl_ruleset_uuid = str(uuid.uuid4())
-        acl_ruleset_name = 'opensto-{:s}-{:s}'.format(self.attack_ref.attack_uuid, acl_ruleset_uuid)
-
         mitigated_device_uuids = {
             topology.get_device_uuid(d_id)
             for d_id in self.mitigated_device_uuids
@@ -143,16 +149,15 @@ class AttackModel:
                 ))
                 continue
 
+            firewall_endpoint_name = topology.get_endpoint_name(firewall_device_uuid, firewall_endpoint_uuid)
+            acl_ruleset_name = 'opensto-{:s}'.format(firewall_endpoint_name)
+            acl_entry_name = 'opensto-{:s}'.format(firewall_endpoint_name)
             if firewall_device_uuid not in firewall_acl_rule_set:
                 firewall_acl_rule_set[firewall_device_uuid] = ACLRuleSet(
                     name=acl_ruleset_name, acl_type=ACLListType.IPV4
                 )
             acl_rule_set = firewall_acl_rule_set[firewall_device_uuid]
 
-            firewall_endpoint_name = topology.get_endpoint_name(firewall_device_uuid, firewall_endpoint_uuid)
-            acl_entry_name = 'opensto-{:s}-{:s}-{:s}'.format(
-                src_device_uuid, firewall_endpoint_uuid, acl_ruleset_uuid
-            )
             acl_entry = ACLEntry(name=acl_entry_name)
             acl_entry.ingress_interface        = firewall_endpoint_name
             acl_entry.match_ipv4.src_ip_prefix = '{:s}/32'.format(str(self.attack_ref.src_ip_addr))

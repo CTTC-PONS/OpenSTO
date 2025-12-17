@@ -15,7 +15,7 @@ def init_kafka_consumer(retries: int = 30, delay: float = 3) -> KafkaConsumer:
             return KafkaConsumer(
                 CONSUMER_TOPIC, bootstrap_servers=KAFKA_SERVER, group_id=CONSUMER_GROUP_ID,
                 value_deserializer = pickle.loads,
-                auto_offset_reset='earliest', enable_auto_commit=True,
+                auto_offset_reset='latest', enable_auto_commit=True,
             )
         except Exception:
             LOGGER.info('[init_kafka_consumer] Failed to connect to Kafka')

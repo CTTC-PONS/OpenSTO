@@ -249,8 +249,3 @@ def get_ietf_acl(acl_rule_set : ACLRuleSet) -> Dict:
             'attachment-points': {'interface': attachment_points},
         }
     }
-
-def compose_acl_rule_set() -> ACLRuleSet:
-    acl_rule_set = ACLRuleSet()
-
-    return acl_rule_set

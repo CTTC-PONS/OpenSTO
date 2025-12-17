@@ -76,12 +76,12 @@ class Processor(threading.Thread):
 
         attacks = list()
         for i,row in enumerate(candidate_data):
-            prob_normal_traffic      = row[label_to_pos['normal_traffic'     ]]
-            prob_benign_heavy_hitter = row[label_to_pos['benign_heavy_hitter']]
+            #prob_normal_traffic      = row[label_to_pos['normal_traffic'     ]]
+            #prob_benign_heavy_hitter = row[label_to_pos['benign_heavy_hitter']]
             prob_malign_heavy_hitter = row[label_to_pos['malign_heavy_hitter']]
 
-            if (prob_malign_heavy_hitter < prob_normal_traffic): continue
-            if (prob_malign_heavy_hitter < prob_benign_heavy_hitter): continue
+            #if (prob_malign_heavy_hitter < prob_normal_traffic): continue
+            #if (prob_malign_heavy_hitter < prob_benign_heavy_hitter): continue
 
             attack_specs = self.attack_store.get('malign_heavy_hitter')
 

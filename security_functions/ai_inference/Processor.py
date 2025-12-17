@@ -44,7 +44,7 @@ class Processor(threading.Thread):
                 LOGGER.info('Processing: {:s}'.format(str(traffic_flow)))
                 inference_probs = self.do_inference(traffic_flow)
                 LOGGER.info('  inference_probs={:s}'.format(str(inference_probs)))
-                producer.send(PUBISHER_TOPIC, value=str(inference_probs))
+                producer.send(PUBISHER_TOPIC, value=inference_probs)
                 producer.flush()
         except Exception:
             LOGGER.exception('Unhandled Exception')

@@ -37,7 +37,8 @@ topology:
 
     ceos14_ACL:
       kind: arista_ceos
-      image: ceos:4.33.1F
+      #image: ceos:4.33.1F
+      image: ceos:4.33.5M
       mgmt-ipv4: 172.20.20.101
       env:
         CEOS: "1"

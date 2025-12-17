@@ -336,7 +336,7 @@
             ]}
         },
         {
-            "device_id": {"device_uuid": {"uuid": "ceos1"}}, "device_type": "emu-packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_id": {"device_uuid": {"uuid": "ceos1"}}, "device_type": "packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
             "device_config": {"config_rules": [
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
@@ -351,7 +351,7 @@
             ]}
         },
         {
-            "device_id": {"device_uuid": {"uuid": "ceos2"}}, "device_type": "emu-packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_id": {"device_uuid": {"uuid": "ceos2"}}, "device_type": "packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
             "device_config": {"config_rules": [
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
@@ -367,7 +367,7 @@
             ]}
         },
         {
-            "device_id": {"device_uuid": {"uuid": "ceos3"}}, "device_type": "emu-packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_id": {"device_uuid": {"uuid": "ceos3"}}, "device_type": "packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
             "device_config": {"config_rules": [
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
@@ -383,7 +383,7 @@
             ]}
         },
         {
-            "device_id": {"device_uuid": {"uuid": "ceos4"}}, "device_type": "emu-packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_id": {"device_uuid": {"uuid": "ceos4"}}, "device_type": "packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
             "device_config": {"config_rules": [
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
@@ -396,7 +396,7 @@
             ]}
         },
         {
-            "device_id": {"device_uuid": {"uuid": "ceos5"}}, "device_type": "emu-packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_id": {"device_uuid": {"uuid": "ceos5"}}, "device_type": "packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
             "device_config": {"config_rules": [
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
@@ -408,7 +408,7 @@
             ]}
         },
         {
-            "device_id": {"device_uuid": {"uuid": "ceos6"}}, "device_type": "emu-packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_id": {"device_uuid": {"uuid": "ceos6"}}, "device_type": "packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
             "device_config": {"config_rules": [
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
@@ -421,7 +421,7 @@
             ]}
         },
         {
-            "device_id": {"device_uuid": {"uuid": "ceos7"}}, "device_type": "emu-packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_id": {"device_uuid": {"uuid": "ceos7"}}, "device_type": "packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
             "device_config": {"config_rules": [
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
@@ -434,7 +434,7 @@
             ]}
         },
         {
-            "device_id": {"device_uuid": {"uuid": "ceos11"}}, "device_type": "emu-packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_id": {"device_uuid": {"uuid": "ceos11"}}, "device_type": "packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
             "device_config": {"config_rules": [
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
@@ -479,7 +479,7 @@
             ]}
         },
         {
-            "device_id": {"device_uuid": {"uuid": "ceos12"}}, "device_type": "emu-packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_id": {"device_uuid": {"uuid": "ceos12"}}, "device_type": "packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
             "device_config": {"config_rules": [
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},
@@ -491,7 +491,7 @@
             ]}
         },
         {
-            "device_id": {"device_uuid": {"uuid": "ceos13"}}, "device_type": "emu-packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
+            "device_id": {"device_uuid": {"uuid": "ceos13"}}, "device_type": "packet-router", "device_drivers": ["DEVICEDRIVER_UNDEFINED"],
             "device_config": {"config_rules": [
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/address", "resource_value": "127.0.0.1"}},
                 {"action": "CONFIGACTION_SET", "custom": {"resource_key": "_connect/port", "resource_value": "0"}},

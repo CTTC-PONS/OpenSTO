@@ -368,5 +368,6 @@ See [LICENSE](LICENSE) for details.
 
 ## Acknowledgements
 
+This work is funded by the European Commission through the HORIZON-JU-SNS-2022 ACROSS project with Grant Agreement number 101097122.
+
 Developed by the **CTTC Packet Optical Networks & Services (PONS)** team and collaborators.  
-Built to explore and operationalize **closed-loop security & trust** in open, disaggregated networks.
